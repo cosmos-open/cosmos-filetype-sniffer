@@ -24,10 +24,18 @@ namespace Cosmos.Business.Extensions.FileTypeSniffers.Core
             _extensionNames = descriptor.ResolveExtensionNames(Separators.Join(separators));
             _offset = descriptor.Offset;
             _sniffingOffsets = new List<SniffingOffset>(4);
-            _hex = descriptor.ResolveHex("??", Separators.Join(separators));
-            _hex2 = descriptor.Hex.GetByte();
 
-            SniffingOffsetsInitialize();
+            if (descriptor.IsComplexMetadata)
+            {
+                _hex = descriptor.ResolveHex("??", Separators.Join(separators));
+                _hex2 = null;
+                SniffingOffsetsInitialize();
+            }
+            else
+            {
+                _hex = null;
+                _hex2 = descriptor.Hex.GetByte();
+            }
 
             IsComplexMetadata = descriptor.IsComplexMetadata;
         }
