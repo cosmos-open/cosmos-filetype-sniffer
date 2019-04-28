@@ -44,14 +44,14 @@ namespace Cosmos.Business.Extensions.FileTypeSniffers.Registering
             return hex.Split(separators);
         }
 
-        public bool IsComplexMetadata => Offset > 0 || Hex.Contains("?");
+        public bool IsComplexMetadata => (Offset > 0) || (Hex.Contains("?"));
 
         private void CheckType(Type type)
         {
             if (type == null)
                 throw new ArgumentNullException(nameof(type));
 
-            if (!type.IsAssignableFrom(typeof(IFileTypeRegistrar)))
+            if (!typeof(IFileTypeRegistrar).IsAssignableFrom(type))
                 throw new ArgumentException($"Type {type} cannot be assignable from {typeof(IFileTypeRegistrar)}", nameof(type));
         }
 

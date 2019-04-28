@@ -29,7 +29,7 @@ namespace Autofac
                 descriptors.AddRange(provider.GetDescriptors());
             }
 
-            var sniffer = FileTypeSnifferFactory.Create(descriptors, options.Separators.ToArray());
+            var sniffer = FileTypeSnifferFactory.Create(descriptors, options.Separators?.ToArray() ?? null);
             builder.RegisterInstance(sniffer).As<IFileTypeSniffer>().SingleInstance();
 
             return builder;
