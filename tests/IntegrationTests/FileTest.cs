@@ -1,18 +1,17 @@
 using System;
 using System.IO;
-using System.Linq;
 using Cosmos.Business.Extensions.FileTypeSniffers;
 using Microsoft.Extensions.DependencyInjection;
 using Xunit;
 
 namespace IntegrationTests
 {
-    public class UnitTest1
+    public class FileTest
     {
         private IFileTypeSniffer Sniffer { get; set; }
         private string Local { get; set; }
 
-        public UnitTest1()
+        public FileTest()
         {
             var services = new ServiceCollection();
             services.AddFileTypeSniffer();
@@ -101,7 +100,7 @@ namespace IntegrationTests
             var results = Sniffer.Match(bytes, true);
             Assert.Contains("rtf", results);
         }
-
+        
         [Fact]
         public void Ps()
         {

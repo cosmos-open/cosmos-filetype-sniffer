@@ -91,13 +91,31 @@ var result = _sniffer.Match(bytes, false);
 var results = _sniffer.Match(bytes, true);
 ```
 
+### Available file types
+
+Currently available file types are:
+
+| Library     | File types                                                                                                                                                                    |
+| :---------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| core        | .bac, .bin, .dmg, .exe, .rc, .stg, .tox                                                                                                                                       |
+| development | .aar, .apd, .avro, .class, .crx, .dat, .deb, .der, dex, .jar, .orc, .pdb, .rpm, .vmdk, .wasm, .xml                                                                            |
+| image       | .bmp, .bpg, .cin, .cr2, .dib, .dpx, .exr, .fh8, .flif, .gif, .ico, .jp2, .jpg, .jpeg, .mlv, .png, .ps, .psd, .tbi, tif, .tiff                                                 |
+| media       | .3g2, .3gp, .asf, .dat, .flac, .iso, .m2p, .mdf, .mid, .midi, .mkv, .mka, .mks, .mk3d, mp3, .mpg, .mpg2, .mpeg, .nes, .ogg, .oga, .ogv, .swf, .toast, .vob, .webm, .wma, .wmv |
+| office      | .cwk, .doc, .docx, .msg, .odp, .ods, .odt, .pdf, .ppt, .pptx, .rtf, .ttf, .vsdx, .woff, .woff2, .xls, .xlsx                                                                   |
+| science     | .fits                                                                                                                                                                         |
+| zip         | .7z, .cab, .gz, .tar.gz, .lz4, .lzfse, .rar, .tar, .xar, .xz, .tar.xz, .z, .tar.z, .zip, .zlib                                                                                |
+
+### How to Unit Test
+
+Copy the `tests\samples` directory under the tests folder to `tests\IntegrationTests\bin\Debug\netcoreapp2.2`.
+
 ---
 
 ## Thanks
 
 People or projects that have made a great contribbution to this project:
 
-- *null*
+- _null_
 - _The next one must be you_
 
 ### Organizations and projects

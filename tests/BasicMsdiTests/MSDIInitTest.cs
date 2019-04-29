@@ -5,10 +5,10 @@ using Xunit;
 
 namespace BasicMsdiTests
 {
-    public class UnitTest1
+    public class MSDIInitTest
     {
         [Fact]
-        public void Test1()
+        public void MSDITest()
         {
             var services = new ServiceCollection();
             services.AddFileTypeSniffer();
@@ -21,7 +21,8 @@ namespace BasicMsdiTests
                 Assert.NotNull(sniffer);
 
                 var statistics = sniffer.GetMetadataStatistics();
-                Assert.Equal(8, statistics.Total);
+                var expected = 1 + 0 + 7; //不重复组件 + 重复组件 + 核心组件
+                Assert.Equal(expected, statistics.Total);
             }
         }
     }

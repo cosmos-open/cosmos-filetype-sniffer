@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Reflection;
 
 namespace Cosmos.Business.Extensions.FileTypeSniffers.Registering
 {
@@ -11,6 +15,21 @@ namespace Cosmos.Business.Extensions.FileTypeSniffers.Registering
         public FileTypeRegistrarScanner() : base(typeof(IFileTypeRegistrar)) { }
 
         protected override string GetSkipAssembliesNamespaces() => SKIP_ASSEMBLIES;
+
+        protected override Assembly[] GetAssemblies()
+        {
+            return base.GetAssemblies().Concat(GetAllUnlinkedAssemblies()).Distinct().ToArray();
+        }
+
+        private static IEnumerable<Assembly> GetAllUnlinkedAssemblies()
+        {
+            var directoryRoot = new DirectoryInfo(Directory.GetCurrentDirectory());
+            var files = directoryRoot.GetFiles("Cosmos.Business.Extensions.FileTypeSniffer.Library.*.dll", SearchOption.AllDirectories);
+            foreach (var file in files)
+            {
+                yield return Assembly.LoadFrom(file.FullName);
+            }
+        }
 
         protected override Func<Type, bool> TypeFilter() =>
             t => t.IsClass && t.IsPublic && !t.IsAbstract && BaseType.IsAssignableFrom(t);

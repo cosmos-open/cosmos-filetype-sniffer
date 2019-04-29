@@ -5,10 +5,10 @@ using Xunit;
 
 namespace BasicAutofacTests
 {
-    public class UnitTest1
+    public class AutofacInitTests
     {
         [Fact]
-        public void Test1()
+        public void AutofacTest()
         {
             var builder = new ContainerBuilder();
             builder.RegisterFileTypeSniffer();
@@ -21,7 +21,8 @@ namespace BasicAutofacTests
                 Assert.NotNull(sniffer);
 
                 var statistics = sniffer.GetMetadataStatistics();
-                Assert.Equal(30, statistics.Total);
+                var expected = 19 + 3 + 7; //不重复组件 + 重复组件 + 核心组件
+                Assert.Equal(expected, statistics.SimpleCount);
             }
         }
     }
