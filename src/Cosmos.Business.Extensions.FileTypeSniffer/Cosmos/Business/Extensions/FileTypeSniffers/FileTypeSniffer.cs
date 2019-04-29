@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using Cosmos.Business.Extensions.FileTypeSniffers.Core;
 using Cosmos.Business.Extensions.FileTypeSniffers.Core.Extensions;
@@ -33,6 +35,26 @@ namespace Cosmos.Business.Extensions.FileTypeSniffers
             return ret.Distinct().ToList();
         }
 
+        public List<string> Match(string filePath, int simpleLength, bool matchAll = false)
+        {
+            if (string.IsNullOrWhiteSpace(filePath))
+                throw new ArgumentNullException(nameof(filePath));
+
+            if (simpleLength <= 0)
+                throw new ArgumentOutOfRangeException(nameof(simpleLength), simpleLength, "Simple length must greater than 0");
+
+            if (!File.Exists(filePath))
+                throw new IOException($"File '{filePath}' does not exist.");
+
+            var bytes = new byte[simpleLength];
+            using (var file = File.OpenRead(filePath))
+            {
+                file.Read(bytes, 0, bytes.Length);
+            }
+
+            return Match(bytes, matchAll);
+        }
+
         internal void Register(SniffingMetadata metadata)
         {
             if (metadata.IsComplexMetadata)
@@ -44,7 +66,6 @@ namespace Cosmos.Business.Extensions.FileTypeSniffers
             {
                 _root.Update(metadata.HexBytes, metadata.ExtensionNames, 0);
                 _metadataStatistics.UpdateSimpleMetadata(metadata.ExtensionNames.Count);
-
             }
         }
 
