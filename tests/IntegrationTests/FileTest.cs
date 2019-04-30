@@ -28,7 +28,7 @@ namespace IntegrationTests
             var results = Sniffer.Match(bytes, true);
             Assert.Contains("doc", results);
         }
-
+        
         [Fact]
         public void WordDocx()
         {

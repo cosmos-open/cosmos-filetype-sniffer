@@ -30,5 +30,14 @@ namespace Cosmos.Business.Extensions.FileTypeSniffers.Core.Extensions
 
             return byteArr;
         }
+
+        public static string RemoveDotAtFirstPosition(this string str)
+        {
+            if (string.IsNullOrWhiteSpace(str))
+                return string.Empty;
+
+            return str.StartsWith(".") ? str.Substring(1) : str;
+        }
+
     }
 }

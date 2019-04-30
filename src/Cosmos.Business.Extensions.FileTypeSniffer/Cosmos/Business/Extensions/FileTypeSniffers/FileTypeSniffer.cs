@@ -55,6 +55,14 @@ namespace Cosmos.Business.Extensions.FileTypeSniffers
             return Match(bytes, matchAll);
         }
 
+        public string MatchSingle(byte[] data) => Match(data).FirstOrDefault();
+
+        public string MatchSingle(string filePath, int simpleLength) => Match(filePath, simpleLength).FirstOrDefault();
+
+        public IFileTypeSniffer Expect(List<string> expectedResults) => new ExpectFileTypeSniffer(this, expectedResults);
+
+        public IFileTypeSniffer Expect(string expectedResult) => new ExpectFileTypeSniffer(this, expectedResult);
+
         internal void Register(SniffingMetadata metadata)
         {
             if (metadata.IsComplexMetadata)
