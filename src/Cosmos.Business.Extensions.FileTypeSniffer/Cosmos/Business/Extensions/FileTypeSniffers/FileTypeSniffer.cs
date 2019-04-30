@@ -59,9 +59,9 @@ namespace Cosmos.Business.Extensions.FileTypeSniffers
 
         public string MatchSingle(string filePath, int simpleLength) => Match(filePath, simpleLength).FirstOrDefault();
 
-        public IFileTypeSniffer Expect(List<string> expectedResults) => new ExpectFileTypeSniffer(this, expectedResults);
+        public IFileTypeSniffer Expect(List<string> expectedResults) => new ExpectedFileTypeSniffer(this, expectedResults);
 
-        public IFileTypeSniffer Expect(string expectedResult) => new ExpectFileTypeSniffer(this, expectedResult);
+        public IFileTypeSniffer Expect(string expectedResult) => new ExpectedFileTypeSniffer(this, expectedResult);
 
         internal void Register(SniffingMetadata metadata)
         {

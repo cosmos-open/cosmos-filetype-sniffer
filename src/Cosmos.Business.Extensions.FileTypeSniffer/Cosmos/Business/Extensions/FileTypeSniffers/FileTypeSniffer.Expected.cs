@@ -6,18 +6,18 @@ using Cosmos.Business.Extensions.FileTypeSniffers.Core.Extensions;
 
 namespace Cosmos.Business.Extensions.FileTypeSniffers
 {
-    public class ExpectFileTypeSniffer : IFileTypeSniffer
+    public class ExpectedFileTypeSniffer : IFileTypeSniffer
     {
         private readonly IFileTypeSniffer _innerSniffer;
         private readonly List<string> _expectedResults;
         private readonly int _expectedCount;
         private readonly bool _singleMode;
 
-        public ExpectFileTypeSniffer(IFileTypeSniffer instance, List<string> expectedResults) : this(instance, expectedResults, false) { }
+        public ExpectedFileTypeSniffer(IFileTypeSniffer instance, List<string> expectedResults) : this(instance, expectedResults, false) { }
 
-        public ExpectFileTypeSniffer(IFileTypeSniffer instance, string expectedResult) : this(instance, new List<string> { expectedResult }, true) { }
+        public ExpectedFileTypeSniffer(IFileTypeSniffer instance, string expectedResult) : this(instance, new List<string> { expectedResult }, true) { }
 
-        private ExpectFileTypeSniffer(IFileTypeSniffer instance, List<string> expectedResults, bool singleMode)
+        private ExpectedFileTypeSniffer(IFileTypeSniffer instance, List<string> expectedResults, bool singleMode)
         {
             _innerSniffer = instance ?? throw new ArgumentNullException(nameof(instance));
             _expectedResults = FixedExpectedResults(expectedResults ?? throw new ArgumentNullException(nameof(expectedResults))).ToList();
@@ -113,9 +113,9 @@ namespace Cosmos.Business.Extensions.FileTypeSniffers
             }
         }
 
-        public IFileTypeSniffer Expect(List<string> expectedResults) => new ExpectFileTypeSniffer(_innerSniffer, expectedResults);
+        public IFileTypeSniffer Expect(List<string> expectedResults) => new ExpectedFileTypeSniffer(_innerSniffer, expectedResults);
 
-        public IFileTypeSniffer Expect(string expectedResult) => new ExpectFileTypeSniffer(_innerSniffer, expectedResult);
+        public IFileTypeSniffer Expect(string expectedResult) => new ExpectedFileTypeSniffer(_innerSniffer, expectedResult);
 
         public SniffingReadOnlyMetadataStatistics GetMetadataStatistics() => _innerSniffer.GetMetadataStatistics();
     }

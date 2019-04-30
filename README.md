@@ -1,6 +1,8 @@
 # OPENCOSMOS/FileTypeSniffer
 
-File type sniffer component, a library that used to identify the real type of physical file via infering the head of the file binary information. This repository belongs to [Open Cosmos](https://github.com/cosmos-open) Project, a part of [COSMOS LOOPS PROGRAMME](https://github.com/cosmos-loops/).
+File type sniffer component, a library that used to identify the real type of physical file via infering the head of the file binary information. 
+
+This repository belongs to [Open Cosmos](https://github.com/cosmos-open) Project, a part of [COSMOS LOOPS PROGRAMME](https://github.com/cosmos-loops/).
 
 This project refers to the design of a part of [rocketRobin/myrmec](https://github.com/rocketRobin/myrmec), so much thx to Rocket Robin!
 
@@ -84,11 +86,14 @@ var results = _sniffer.Match(bytes, true);
 ### Find single result or multiple results
 
 ```c#
-//For single result, false as default:
-var result = _sniffer.Match(bytes, false);
+//For single result in list, false as default:
+List<string> results0 = _sniffer.Match(bytes, false);
 
 //For multiple results:
-var results = _sniffer.Match(bytes, true);
+List<string> results1 = _sniffer.Match(bytes, true);
+
+//or
+string result2 = _sniffer.MatchSingle(bytes);
 ```
 
 ### Available file types
@@ -120,7 +125,7 @@ People or projects that have made a great contribbution to this project:
 
 ### Organizations and projects
 
-- [rocketRobin/myrmec](https://github.com/rocketRobin/myrmec), Apache 2.0 License
+- [rocketRobin/myrmec](https://github.com/rocketRobin/myrmec), Apache License 2.0
 
 ---
 
