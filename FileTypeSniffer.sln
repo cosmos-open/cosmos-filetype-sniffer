@@ -30,10 +30,11 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{8A8A59A5-6118-4900-840E-89C1B6593124}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{6C96F984-F79A-4D92-B2E6-18C61FDAEDA4}"
-	ProjectSection(SolutionItems) = preProject
-		build\common.props = build\common.props
-		build\version.props = build\version.props
-	EndProjectSection
+ProjectSection(SolutionItems) = preProject
+	build\Publish.bat = build\Publish.bat
+	build\PublishToAlexinea.bat = build\PublishToAlexinea.bat
+	build\PublishToMyGet.bat = build\PublishToMyGet.bat
+EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicMsdiTests", "tests\BasicMsdiTests\BasicMsdiTests.csproj", "{6DBC4594-E661-4A1C-901C-584E4A1393C0}"
 EndProject
@@ -44,6 +45,26 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{1311CDD6-A23E-487B-A883-1910F6DE7593}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.Business.Samples", "samples\Cosmos.Business.Samples\Cosmos.Business.Samples.csproj", "{158903A1-2670-45FF-8A51-2E427CCB7747}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{C15B1D22-86A9-4B44-A643-779B3652B0F1}"
+ProjectSection(SolutionItems) = preProject
+	README.md = README.md
+EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "asset", "asset", "{4D27E52A-1018-4AAD-9C8B-7D41F952A76B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{6502B255-C031-40E3-B9BB-5FC032C75B59}"
+ProjectSection(SolutionItems) = preProject
+	asset\images\icon.back.png = asset\images\icon.back.png
+	asset\images\icon.png = asset\images\icon.png
+EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "props", "props", "{E41CF0D6-2140-45D7-ACDB-D57353E80818}"
+ProjectSection(SolutionItems) = preProject
+	asset\props\misc.props = asset\props\misc.props
+	asset\props\package.props = asset\props\package.props
+	asset\props\version.props = asset\props\version.props
+EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +144,8 @@ Global
 		{1E904560-3E46-4F23-B13E-FDE623743D39} = {8A8A59A5-6118-4900-840E-89C1B6593124}
 		{BEEFEF04-7B93-492C-B053-75E7BE2506A4} = {8A8A59A5-6118-4900-840E-89C1B6593124}
 		{158903A1-2670-45FF-8A51-2E427CCB7747} = {1311CDD6-A23E-487B-A883-1910F6DE7593}
+		{6502B255-C031-40E3-B9BB-5FC032C75B59} = {4D27E52A-1018-4AAD-9C8B-7D41F952A76B}
+		{E41CF0D6-2140-45D7-ACDB-D57353E80818} = {4D27E52A-1018-4AAD-9C8B-7D41F952A76B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {93F5CBB1-09D3-41FE-BE89-EC0ECB4CA363}

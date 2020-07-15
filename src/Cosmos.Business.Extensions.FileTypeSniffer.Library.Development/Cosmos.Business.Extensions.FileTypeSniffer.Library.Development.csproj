@@ -1,15 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-  <Import Project="..\..\build\common.props" />
+
+  <Import Project="..\..\common.props" />
+
   <PropertyGroup>
-    <AssemblyName>Cosmos.Business.Extensions.FileTypeSniffer.Library.Development</AssemblyName>
-    <PackageId>Cosmos.Business.Extensions.FileTypeSniffer.Library.Development</PackageId>
+    <AssemblyName>Cosmos.Extensions.FileTypeSniffer.Library.Development</AssemblyName>
+    <PackageId>Cosmos.Extensions.FileTypeSniffer.Library.Development</PackageId>
     <Description>Development class files for Cosmos Business file type sniffer Extensions.</Description>
-    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
-    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
-    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
-    <LangVersion>7.2</LangVersion>
-    <RootNamespace />
   </PropertyGroup>
+  
   <ItemGroup>
     <ProjectReference Include="..\Cosmos.Business.Extensions.FileTypeSniffer\Cosmos.Business.Extensions.FileTypeSniffer.csproj" />
   </ItemGroup>

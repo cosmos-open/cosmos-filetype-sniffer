@@ -1,18 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-  <Import Project="..\..\build\common.props" />
+
+  <Import Project="..\..\common.props" />
+
   <PropertyGroup>
-    <AssemblyName>Cosmos.Business.Extensions.FileTypeSniffer.Extensions.Autofac</AssemblyName>
-    <PackageId>Cosmos.Business.Extensions.FileTypeSniffer.Extensions.Autofac</PackageId>
+    <AssemblyName>Cosmos.Extensions.FileTypeSniffer.Extensions.Autofac</AssemblyName>
+    <PackageId>Cosmos.Extensions.FileTypeSniffer.Extensions.Autofac</PackageId>
     <Description>Autofac extensions for Cosmos Business file type sniffer Extensions.</Description>
-    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
-    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
-    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
-    <LangVersion>7.2</LangVersion>
-    <RootNamespace />
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Autofac" Version="4.9.2" />
+    <PackageReference Include="Cosmos.Extensions.Autofac" Version="0.1.4.5" />
   </ItemGroup>
 
   <ItemGroup>

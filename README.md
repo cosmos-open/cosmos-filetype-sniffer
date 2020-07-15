@@ -1,4 +1,4 @@
-# OPENCOSMOS/FileTypeSniffer
+# COSMOSLOOPS/FileTypeSniffer
 
 File type sniffer component, a library that used to identify the real type of physical file via infering the head of the file binary information. 
 
