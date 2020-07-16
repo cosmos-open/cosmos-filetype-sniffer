@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using Cosmos.Business.Extensions.FileTypeSniffers;
+using Cosmos.FileTypeSniffers;
 using Microsoft.Extensions.DependencyInjection;
 using Xunit;
 

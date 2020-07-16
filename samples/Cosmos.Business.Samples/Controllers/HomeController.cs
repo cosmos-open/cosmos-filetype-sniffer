@@ -1,18 +1,18 @@
 ﻿using System.Diagnostics;
 using System.IO;
-using Cosmos.Business.Extensions.FileTypeSniffers;
 using Microsoft.AspNetCore.Mvc;
 using Cosmos.Business.Samples.Models;
+using Cosmos.FileTypeSniffers;
 using Microsoft.AspNetCore.Hosting;
 
 namespace Cosmos.Business.Samples.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IHostingEnvironment _env;
+        private readonly IWebHostEnvironment _env;
         private readonly IFileTypeSniffer _sniffer;
 
-        public HomeController(IHostingEnvironment env, IFileTypeSniffer sniffer)
+        public HomeController(IWebHostEnvironment env, IFileTypeSniffer sniffer)
         {
             _env = env;
             _sniffer = sniffer;

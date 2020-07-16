@@ -1,5 +1,4 @@
-using System;
-using Cosmos.Business.Extensions.FileTypeSniffers;
+using Cosmos.FileTypeSniffers;
 using Microsoft.Extensions.DependencyInjection;
 using Xunit;
 

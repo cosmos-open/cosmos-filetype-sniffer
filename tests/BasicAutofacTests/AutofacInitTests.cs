@@ -1,6 +1,7 @@
 using System;
 using Autofac;
 using Cosmos.Business.Extensions.FileTypeSniffers;
+using Cosmos.FileTypeSniffers;
 using Xunit;
 
 namespace BasicAutofacTests

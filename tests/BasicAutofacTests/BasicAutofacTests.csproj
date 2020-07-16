@@ -12,9 +12,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Cosmos.Business.Extensions.FileTypeSniffer.Extensions.Autofac\Cosmos.Business.Extensions.FileTypeSniffer.Extensions.Autofac.csproj" />
-    <ProjectReference Include="..\..\src\Cosmos.Business.Extensions.FileTypeSniffer.Library.Zip\Cosmos.Business.Extensions.FileTypeSniffer.Library.Zip.csproj" />
-    <ProjectReference Include="..\..\src\Cosmos.Business.Extensions.FileTypeSniffer\Cosmos.Business.Extensions.FileTypeSniffer.csproj" />
+    <ProjectReference Include="..\..\src\Cosmos.Extensions.FileTypeSniffer.Library.Zip\Cosmos.Extensions.FileTypeSniffer.Library.Zip.csproj" />
+    <ProjectReference Include="..\..\src\Cosmos.Extensions.FileTypeSniffer.Extensions.Autofac\Cosmos.Extensions.FileTypeSniffer.Extensions.Autofac.csproj" />
+    <ProjectReference Include="..\..\src\Cosmos.Extensions.FileTypeSniffer\Cosmos.Extensions.FileTypeSniffer.csproj" />
   </ItemGroup>
 
 </Project>

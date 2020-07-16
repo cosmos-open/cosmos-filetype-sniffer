@@ -22,19 +22,19 @@ set /p key=input key:
 ::start to package all projects
 
 ::core
-dotnet pack src/Cosmos.Business.Extensions.FileTypeSniffer -c Release -o nuget_packages
+dotnet pack src/Cosmos.Extensions.FileTypeSniffer -c Release -o nuget_packages
 
 ::extensions for dependency
-dotnet pack src/Cosmos.Business.Extensions.FileTypeSniffer.Extensions.Autofac -c Release -o nuget_packages
-dotnet pack src/Cosmos.Business.Extensions.FileTypeSniffer.Extensions.DependencyInjection -c Release -o nuget_packages
+dotnet pack src/Cosmos.Extensions.FileTypeSniffer.Extensions.Autofac -c Release -o nuget_packages
+dotnet pack src/Cosmos.Extensions.FileTypeSniffer.Extensions.DependencyInjection -c Release -o nuget_packages
 
 ::extensions for library
-dotnet pack src/Cosmos.Business.Extensions.FileTypeSniffer.Library.Development -c Release -o nuget_packages
-dotnet pack src/Cosmos.Business.Extensions.FileTypeSniffer.Library.Image -c Release -o nuget_packages
-dotnet pack src/Cosmos.Business.Extensions.FileTypeSniffer.Library.Media -c Release -o nuget_packages
-dotnet pack src/Cosmos.Business.Extensions.FileTypeSniffer.Library.Office -c Release -o nuget_packages
-dotnet pack src/Cosmos.Business.Extensions.FileTypeSniffer.Library.Science -c Release -o nuget_packages
-dotnet pack src/Cosmos.Business.Extensions.FileTypeSniffer.Library.Zip -c Release -o nuget_packages
+dotnet pack src/Cosmos.Extensions.FileTypeSniffer.Library.Development -c Release -o nuget_packages
+dotnet pack src/Cosmos.Extensions.FileTypeSniffer.Library.Image -c Release -o nuget_packages
+dotnet pack src/Cosmos.Extensions.FileTypeSniffer.Library.Media -c Release -o nuget_packages
+dotnet pack src/Cosmos.Extensions.FileTypeSniffer.Library.Office -c Release -o nuget_packages
+dotnet pack src/Cosmos.Extensions.FileTypeSniffer.Library.Science -c Release -o nuget_packages
+dotnet pack src/Cosmos.Extensions.FileTypeSniffer.Library.Zip -c Release -o nuget_packages
 
 echo.
 echo.

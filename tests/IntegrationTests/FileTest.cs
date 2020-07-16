@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using Cosmos.Business.Extensions.FileTypeSniffers;
+using Cosmos.FileTypeSniffers;
 using Microsoft.Extensions.DependencyInjection;
 using Xunit;
 

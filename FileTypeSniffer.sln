@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28803.202
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Business.Extensions.FileTypeSniffer", "src\Cosmos.Business.Extensions.FileTypeSniffer\Cosmos.Business.Extensions.FileTypeSniffer.csproj", "{3187D553-2AEE-4795-AE71-E3DCF245218F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Extensions.FileTypeSniffer", "src\Cosmos.Extensions.FileTypeSniffer\Cosmos.Extensions.FileTypeSniffer.csproj", "{3187D553-2AEE-4795-AE71-E3DCF245218F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8D862999-D756-4D00-8FEB-97567921CB2E}"
 EndProject
@@ -11,21 +11,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dependency", "dependency", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "library", "library", "{6D3ACA27-C2C3-4051-B6B7-8630D2D2A796}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Business.Extensions.FileTypeSniffer.Library.Office", "src\Cosmos.Business.Extensions.FileTypeSniffer.Library.Office\Cosmos.Business.Extensions.FileTypeSniffer.Library.Office.csproj", "{C9C4A5F7-E895-45F7-9DE7-3F702A5AFEEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Extensions.FileTypeSniffer.Library.Office", "src\Cosmos.Extensions.FileTypeSniffer.Library.Office\Cosmos.Extensions.FileTypeSniffer.Library.Office.csproj", "{C9C4A5F7-E895-45F7-9DE7-3F702A5AFEEF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Business.Extensions.FileTypeSniffer.Extensions.DependencyInjection", "src\Cosmos.Business.Extensions.FileTypeSniffer.Extensions.DependencyInjection\Cosmos.Business.Extensions.FileTypeSniffer.Extensions.DependencyInjection.csproj", "{8F980EFA-8EB5-479E-BADE-FC1863377BEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Extensions.FileTypeSniffer.Extensions.DependencyInjection", "src\Cosmos.Extensions.FileTypeSniffer.Extensions.DependencyInjection\Cosmos.Extensions.FileTypeSniffer.Extensions.DependencyInjection.csproj", "{8F980EFA-8EB5-479E-BADE-FC1863377BEE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Business.Extensions.FileTypeSniffer.Library.Media", "src\Cosmos.Business.Extensions.FileTypeSniffer.Library.Media\Cosmos.Business.Extensions.FileTypeSniffer.Library.Media.csproj", "{7A569B09-8076-4B3A-A966-41ED7853599C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Extensions.FileTypeSniffer.Library.Media", "src\Cosmos.Extensions.FileTypeSniffer.Library.Media\Cosmos.Extensions.FileTypeSniffer.Library.Media.csproj", "{7A569B09-8076-4B3A-A966-41ED7853599C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Business.Extensions.FileTypeSniffer.Library.Image", "src\Cosmos.Business.Extensions.FileTypeSniffer.Library.Image\Cosmos.Business.Extensions.FileTypeSniffer.Library.Image.csproj", "{B6F7AB0A-241C-4EBF-97A6-54646975DD3A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Extensions.FileTypeSniffer.Library.Image", "src\Cosmos.Extensions.FileTypeSniffer.Library.Image\Cosmos.Extensions.FileTypeSniffer.Library.Image.csproj", "{B6F7AB0A-241C-4EBF-97A6-54646975DD3A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Business.Extensions.FileTypeSniffer.Extensions.Autofac", "src\Cosmos.Business.Extensions.FileTypeSniffer.Extensions.Autofac\Cosmos.Business.Extensions.FileTypeSniffer.Extensions.Autofac.csproj", "{62405E7A-A9A3-4CBB-A51A-0B4BC36B94BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Extensions.FileTypeSniffer.Extensions.Autofac", "src\Cosmos.Extensions.FileTypeSniffer.Extensions.Autofac\Cosmos.Extensions.FileTypeSniffer.Extensions.Autofac.csproj", "{62405E7A-A9A3-4CBB-A51A-0B4BC36B94BF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Business.Extensions.FileTypeSniffer.Library.Zip", "src\Cosmos.Business.Extensions.FileTypeSniffer.Library.Zip\Cosmos.Business.Extensions.FileTypeSniffer.Library.Zip.csproj", "{7A9F407C-9058-41C7-8012-0ADEB6DF45B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Extensions.FileTypeSniffer.Library.Zip", "src\Cosmos.Extensions.FileTypeSniffer.Library.Zip\Cosmos.Extensions.FileTypeSniffer.Library.Zip.csproj", "{7A9F407C-9058-41C7-8012-0ADEB6DF45B3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Business.Extensions.FileTypeSniffer.Library.Science", "src\Cosmos.Business.Extensions.FileTypeSniffer.Library.Science\Cosmos.Business.Extensions.FileTypeSniffer.Library.Science.csproj", "{A666DF50-7959-4BDA-9E4E-FBE823EE9F0B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Extensions.FileTypeSniffer.Library.Science", "src\Cosmos.Extensions.FileTypeSniffer.Library.Science\Cosmos.Extensions.FileTypeSniffer.Library.Science.csproj", "{A666DF50-7959-4BDA-9E4E-FBE823EE9F0B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Business.Extensions.FileTypeSniffer.Library.Development", "src\Cosmos.Business.Extensions.FileTypeSniffer.Library.Development\Cosmos.Business.Extensions.FileTypeSniffer.Library.Development.csproj", "{25168423-87D2-421D-893F-958151F6821B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Extensions.FileTypeSniffer.Library.Development", "src\Cosmos.Extensions.FileTypeSniffer.Library.Development\Cosmos.Extensions.FileTypeSniffer.Library.Development.csproj", "{25168423-87D2-421D-893F-958151F6821B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{8A8A59A5-6118-4900-840E-89C1B6593124}"
 EndProject

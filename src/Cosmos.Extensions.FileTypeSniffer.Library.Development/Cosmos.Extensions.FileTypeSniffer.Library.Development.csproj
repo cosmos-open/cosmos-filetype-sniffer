@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <AssemblyName>Cosmos.Extensions.FileTypeSniffer.Library.Development</AssemblyName>
+    <PackageId>Cosmos.Extensions.FileTypeSniffer.Library.Development</PackageId>
+    <Description>Development class files for Cosmos Business file type sniffer Extensions.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Cosmos.Extensions.FileTypeSniffer\Cosmos.Extensions.FileTypeSniffer.csproj" />
+  </ItemGroup>
+
+</Project>
