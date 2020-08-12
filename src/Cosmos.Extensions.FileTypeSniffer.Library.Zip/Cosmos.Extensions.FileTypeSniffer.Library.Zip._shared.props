@@ -1,0 +1,9 @@
+﻿<Project>
+
+  <PropertyGroup>
+    <AssemblyName>Cosmos.Extensions.FileTypeSniffer.Library.Zip</AssemblyName>
+    <PackageId>Cosmos.Extensions.FileTypeSniffer.Library.Zip</PackageId>
+    <Description>Zip class files for Cosmos Business file type sniffer Extensions.</Description>
+  </PropertyGroup>
+
+</Project>

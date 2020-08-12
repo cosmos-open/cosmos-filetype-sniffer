@@ -1,11 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
- 
+
   <Import Project="Cosmos.Extensions.FileTypeSniffer.Library.Image._shared.props" />
 
     <Import Project="..\..\common.props" />
 
   <ItemGroup>
-    <ProjectReference Include="..\Cosmos.Extensions.FileTypeSniffer\Cosmos.Extensions.FileTypeSniffer.csproj" />
+    <ProjectReference Include="..\Cosmos.Extensions.FileTypeSniffer\Cosmos.Extensions.FileTypeSniffer._build.csproj" />
   </ItemGroup>
 
 </Project>

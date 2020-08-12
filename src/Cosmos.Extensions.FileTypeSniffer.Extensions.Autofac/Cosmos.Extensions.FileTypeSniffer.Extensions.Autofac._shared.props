@@ -1,0 +1,9 @@
+﻿<Project>
+
+  <PropertyGroup>
+    <AssemblyName>Cosmos.Extensions.FileTypeSniffer.Extensions.Autofac</AssemblyName>
+    <PackageId>Cosmos.Extensions.FileTypeSniffer.Extensions.Autofac</PackageId>
+    <Description>Autofac extensions for Cosmos Business file type sniffer Extensions.</Description>
+  </PropertyGroup>
+
+</Project>

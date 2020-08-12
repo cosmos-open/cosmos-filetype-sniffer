@@ -1,0 +1,9 @@
+﻿<Project>
+
+  <PropertyGroup>
+    <AssemblyName>Cosmos.Extensions.FileTypeSniffer.Library.Media</AssemblyName>
+    <PackageId>Cosmos.Extensions.FileTypeSniffer.Library.Media</PackageId>
+    <Description>Media class files for Cosmos Business file type sniffer Extensions.</Description>
+  </PropertyGroup>
+
+</Project>

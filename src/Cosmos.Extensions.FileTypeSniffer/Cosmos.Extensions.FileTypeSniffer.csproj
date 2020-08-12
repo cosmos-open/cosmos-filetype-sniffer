@@ -1,15 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
+    <Import Project="Cosmos.Extensions.FileTypeSniffer._shared.props" />
+
     <Import Project="..\..\common.props" />
-
-    <PropertyGroup>
-        <AssemblyName>Cosmos.Extensions.FileTypeSniffer</AssemblyName>
-        <PackageId>Cosmos.Extensions.FileTypeSniffer</PackageId>
-        <Description>File extension name sniffer for Cosmos Business Extensions.</Description>
-    </PropertyGroup>
-
+    
     <ItemGroup>
-        <PackageReference Include="Cosmos.Extensions.Dependency.Core" Version="0.1.4.5" />
-        <PackageReference Include="Cosmos.Standard" Version="0.1.4.5" />
+        <PackageReference Include="Cosmos.Extensions.Dependency" Version="$(TargetPkgVersion)" />
+        <PackageReference Include="Cosmos.Standard" Version="$(TargetPkgVersion)" />
     </ItemGroup>
 </Project>

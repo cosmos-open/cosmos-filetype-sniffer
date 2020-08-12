@@ -1,0 +1,9 @@
+﻿<Project>
+
+  <PropertyGroup>
+    <AssemblyName>Cosmos.Extensions.FileTypeSniffer.Library.Office</AssemblyName>
+    <PackageId>Cosmos.Extensions.FileTypeSniffer.Library.Office</PackageId>
+    <Description>Office class files for Cosmos Business file type sniffer Extensions.</Description>
+  </PropertyGroup>
+
+</Project>
