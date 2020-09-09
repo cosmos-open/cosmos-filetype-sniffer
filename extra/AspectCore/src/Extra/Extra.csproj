@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="..\..\..\common.extra.props" />
+
+    <PropertyGroup>
+        <AssemblyName>Cosmos.Extensions.FileTypeSniffer.Extra.AspectCoreInjector</AssemblyName>
+        <PackageId>Cosmos.Extensions.FileTypeSniffer.Extra.AspectCoreInjector</PackageId>
+        <Description>Extra package for NCC AspectCore DependencyInjection extensions and Cosmos FileTypeSniffer business extensions.</Description>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Cosmos.Extensions.AspectCoreInjector" Version="$(TargetPkgVersion)" />
+    </ItemGroup>
+
+</Project>
