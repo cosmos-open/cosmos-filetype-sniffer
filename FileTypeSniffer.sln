@@ -7,19 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Extensions.FileTypeS
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8D862999-D756-4D00-8FEB-97567921CB2E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dependency", "dependency", "{A4F6EB7B-2AE7-4B58-9F54-25C5B071CB3D}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "library", "library", "{6D3ACA27-C2C3-4051-B6B7-8630D2D2A796}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Extensions.FileTypeSniffer.Library.Office", "src\Cosmos.Extensions.FileTypeSniffer.Library.Office\Cosmos.Extensions.FileTypeSniffer.Library.Office.csproj", "{C9C4A5F7-E895-45F7-9DE7-3F702A5AFEEF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Extensions.FileTypeSniffer.Extensions.DependencyInjection", "src\Cosmos.Extensions.FileTypeSniffer.Extensions.DependencyInjection\Cosmos.Extensions.FileTypeSniffer.Extensions.DependencyInjection.csproj", "{8F980EFA-8EB5-479E-BADE-FC1863377BEE}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Extensions.FileTypeSniffer.Library.Media", "src\Cosmos.Extensions.FileTypeSniffer.Library.Media\Cosmos.Extensions.FileTypeSniffer.Library.Media.csproj", "{7A569B09-8076-4B3A-A966-41ED7853599C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Extensions.FileTypeSniffer.Library.Image", "src\Cosmos.Extensions.FileTypeSniffer.Library.Image\Cosmos.Extensions.FileTypeSniffer.Library.Image.csproj", "{B6F7AB0A-241C-4EBF-97A6-54646975DD3A}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Extensions.FileTypeSniffer.Extensions.Autofac", "src\Cosmos.Extensions.FileTypeSniffer.Extensions.Autofac\Cosmos.Extensions.FileTypeSniffer.Extensions.Autofac.csproj", "{62405E7A-A9A3-4CBB-A51A-0B4BC36B94BF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Extensions.FileTypeSniffer.Library.Zip", "src\Cosmos.Extensions.FileTypeSniffer.Library.Zip\Cosmos.Extensions.FileTypeSniffer.Library.Zip.csproj", "{7A9F407C-9058-41C7-8012-0ADEB6DF45B3}"
 EndProject
@@ -89,10 +83,6 @@ Global
 		{C9C4A5F7-E895-45F7-9DE7-3F702A5AFEEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9C4A5F7-E895-45F7-9DE7-3F702A5AFEEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9C4A5F7-E895-45F7-9DE7-3F702A5AFEEF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8F980EFA-8EB5-479E-BADE-FC1863377BEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8F980EFA-8EB5-479E-BADE-FC1863377BEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8F980EFA-8EB5-479E-BADE-FC1863377BEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8F980EFA-8EB5-479E-BADE-FC1863377BEE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7A569B09-8076-4B3A-A966-41ED7853599C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7A569B09-8076-4B3A-A966-41ED7853599C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A569B09-8076-4B3A-A966-41ED7853599C}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -101,10 +91,6 @@ Global
 		{B6F7AB0A-241C-4EBF-97A6-54646975DD3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6F7AB0A-241C-4EBF-97A6-54646975DD3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6F7AB0A-241C-4EBF-97A6-54646975DD3A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{62405E7A-A9A3-4CBB-A51A-0B4BC36B94BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{62405E7A-A9A3-4CBB-A51A-0B4BC36B94BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{62405E7A-A9A3-4CBB-A51A-0B4BC36B94BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{62405E7A-A9A3-4CBB-A51A-0B4BC36B94BF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7A9F407C-9058-41C7-8012-0ADEB6DF45B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7A9F407C-9058-41C7-8012-0ADEB6DF45B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A9F407C-9058-41C7-8012-0ADEB6DF45B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -139,13 +125,10 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{3187D553-2AEE-4795-AE71-E3DCF245218F} = {8D862999-D756-4D00-8FEB-97567921CB2E}
-		{A4F6EB7B-2AE7-4B58-9F54-25C5B071CB3D} = {8D862999-D756-4D00-8FEB-97567921CB2E}
 		{6D3ACA27-C2C3-4051-B6B7-8630D2D2A796} = {8D862999-D756-4D00-8FEB-97567921CB2E}
 		{C9C4A5F7-E895-45F7-9DE7-3F702A5AFEEF} = {6D3ACA27-C2C3-4051-B6B7-8630D2D2A796}
-		{8F980EFA-8EB5-479E-BADE-FC1863377BEE} = {A4F6EB7B-2AE7-4B58-9F54-25C5B071CB3D}
 		{7A569B09-8076-4B3A-A966-41ED7853599C} = {6D3ACA27-C2C3-4051-B6B7-8630D2D2A796}
 		{B6F7AB0A-241C-4EBF-97A6-54646975DD3A} = {6D3ACA27-C2C3-4051-B6B7-8630D2D2A796}
-		{62405E7A-A9A3-4CBB-A51A-0B4BC36B94BF} = {A4F6EB7B-2AE7-4B58-9F54-25C5B071CB3D}
 		{7A9F407C-9058-41C7-8012-0ADEB6DF45B3} = {6D3ACA27-C2C3-4051-B6B7-8630D2D2A796}
 		{A666DF50-7959-4BDA-9E4E-FBE823EE9F0B} = {6D3ACA27-C2C3-4051-B6B7-8630D2D2A796}
 		{25168423-87D2-421D-893F-958151F6821B} = {6D3ACA27-C2C3-4051-B6B7-8630D2D2A796}
