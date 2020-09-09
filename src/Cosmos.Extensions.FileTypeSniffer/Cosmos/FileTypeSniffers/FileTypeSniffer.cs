@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using Cosmos.FileTypeSniffers.Core;
-using Cosmos.FileTypeSniffers.Core.Extensions;
 
 namespace Cosmos.FileTypeSniffers
 {

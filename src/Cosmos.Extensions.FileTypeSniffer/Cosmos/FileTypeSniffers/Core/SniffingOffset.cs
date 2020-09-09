@@ -1,5 +1,4 @@
 ﻿using System.Text;
-using Cosmos.FileTypeSniffers.Core.Extensions;
 
 namespace Cosmos.FileTypeSniffers.Core
 {

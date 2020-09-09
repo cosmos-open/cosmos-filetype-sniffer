@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Cosmos.FileTypeSniffers.Core.Extensions;
 using Cosmos.FileTypeSniffers.Registering;
 
 namespace Cosmos.FileTypeSniffers.Core

@@ -12,17 +12,15 @@ namespace Cosmos.FileTypeSniffers.Providers
 
         public DefaultFileTypeProvider()
         {
-            using (var scanner = new FileTypeRegistrarScanner())
-            {
-                TypesOfFileType = scanner.Scan().ToList();
-            }
+            using var scanner = new FileTypeRegistrarScanner();
+            TypesOfFileType = scanner.Scan().ToList();
         }
 
         public IEnumerable<IFileTypeDescriptor> GetDescriptors()
         {
             foreach (var registrarType in TypesOfFileType.ToList())
             {
-                if (registrarType == null)
+                if (registrarType is null)
                     continue;
                 yield return new FileTypeDescriptor(registrarType);
             }
