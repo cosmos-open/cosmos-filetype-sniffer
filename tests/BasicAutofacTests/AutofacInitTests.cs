@@ -1,7 +1,5 @@
-using System;
 using Autofac;
-using Cosmos.Business.Extensions.FileTypeSniffers;
-using Cosmos.FileTypeSniffers;
+using Cosmos.Sniffers;
 using Xunit;
 
 namespace BasicAutofacTests
@@ -12,7 +10,7 @@ namespace BasicAutofacTests
         public void AutofacTest()
         {
             var builder = new ContainerBuilder();
-            builder.RegisterFileTypeSniffer();
+            builder.RegisterCosmosFileTypeSniffer();
             var container = builder.Build();
 
             using (var scope = container.BeginLifetimeScope())

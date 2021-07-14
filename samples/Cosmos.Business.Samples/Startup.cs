@@ -31,7 +31,7 @@ namespace Cosmos.Business.Samples
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-            services.AddFileTypeSniffer();
+            services.AddCosmosFileTypeSniffer();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }

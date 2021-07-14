@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using Cosmos.Business.Extensions.FileTypeSniffers;
-using Cosmos.FileTypeSniffers;
+using Cosmos.Sniffers;
 using Microsoft.Extensions.DependencyInjection;
 using Xunit;
 
@@ -17,7 +16,7 @@ namespace IntegrationTests
         public ExpectedTest()
         {
             var services = new ServiceCollection();
-            services.AddFileTypeSniffer();
+            services.AddCosmosFileTypeSniffer();
             var provider = services.BuildServiceProvider();
 
             Sniffer = provider.GetRequiredService<IFileTypeSniffer>();
