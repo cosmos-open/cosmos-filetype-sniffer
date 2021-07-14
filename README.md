@@ -1,6 +1,6 @@
 # COSMOSLOOPS/FileTypeSniffer
 
-File type sniffer component, a library that used to identify the real type of physical file via infering the head of the file binary information. 
+File type sniffer component, a library that used to identify the real type of physical file via infering the head of the file binary information.
 
 This repository belongs to [Open Cosmos](https://github.com/cosmos-open) Project, a part of [COSMOS LOOPS PROGRAMME](https://github.com/cosmos-loops/).
 
@@ -107,7 +107,7 @@ Currently available file types are:
 | development | .aar, .apd, .avro, .class, .crx, .dat, .deb, .der, dex, .jar, .orc, .pdb, .rpm, .vmdk, .wasm, .xml                                                                            |
 | image       | .bmp, .bpg, .cin, .cr2, .dib, .dpx, .exr, .fh8, .flif, .gif, .ico, .jp2, .jpg, .jpeg, .mlv, .png, .ps, .psd, .tbi, tif, .tiff                                                 |
 | media       | .3g2, .3gp, .asf, .dat, .flac, .iso, .m2p, .mdf, .mid, .midi, .mkv, .mka, .mks, .mk3d, mp3, .mpg, .mpg2, .mpeg, .nes, .ogg, .oga, .ogv, .swf, .toast, .vob, .webm, .wma, .wmv |
-| office      | .cwk, .doc, .docx, .msg, .odp, .ods, .odt, .pdf, .ppt, .pptx, .rtf, .ttf, .vsdx, .woff, .woff2, .xls, .xlsx, .wps, .et, .dps, .emmx, .eddx                                    |
+| office      | .awz3, .cwk, .doc, .docx, .dps, .eddx, .emmx, .epub, .et, .mobi, .msg, .odp, .ods, .odt, .pdf, .ppt, .pptx, .rtf, .ttf, .vsdx, .woff, .woff2, .wps, .xls, .xlsx, .xmind       |
 | science     | .fits                                                                                                                                                                         |
 | zip         | .7z, .cab, .gz, .tar.gz, .lz4, .lzfse, .rar, .tar, .xar, .xz, .tar.xz, .z, .tar.z, .zip, .zlib                                                                                |
 
@@ -119,7 +119,7 @@ Copy the `tests\samples` directory under the tests folder to `tests\IntegrationT
 
 ## Thanks
 
-People or projects that have made a great contribbution to this project:
+People or projects that have made a great contribution to this project:
 
 - _null_
 - _The next one must be you_
