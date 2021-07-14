@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using Cosmos.FileTypeSniffers.Core;
+using Cosmos.Sniffers.FileTypeSniffers.Core;
 
-namespace Cosmos.FileTypeSniffers.Registering
+namespace Cosmos.Sniffers.FileTypeSniffers.Registering
 {
     public class FileTypeDescriptor : IFileTypeDescriptor
     {
@@ -51,8 +51,8 @@ namespace Cosmos.FileTypeSniffers.Registering
             if (type == null)
                 throw new ArgumentNullException(nameof(type));
 
-            if (!typeof(IFileTypeRegistrar).IsAssignableFrom(type))
-                throw new ArgumentException($"Type {type} cannot be assignable from {typeof(IFileTypeRegistrar)}", nameof(type));
+            if (!typeof(IFileTypeFingerprint).IsAssignableFrom(type))
+                throw new ArgumentException($"Type {type} cannot be assignable from {typeof(IFileTypeFingerprint)}", nameof(type));
         }
 
         private string GetDescription(Type type)

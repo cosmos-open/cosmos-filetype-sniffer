@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Cosmos.FileTypeSniffers.Registering
+namespace Cosmos.Sniffers.FileTypeSniffers.Registering
 {
     public interface IFileTypeDescriptor
     {

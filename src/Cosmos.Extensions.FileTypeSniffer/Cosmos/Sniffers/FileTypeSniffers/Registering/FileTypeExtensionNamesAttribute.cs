@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Cosmos.FileTypeSniffers.Registering
+namespace Cosmos.Sniffers.FileTypeSniffers.Registering
 {
     [AttributeUsage(AttributeTargets.Class)]
     public class FileTypeExtensionNamesAttribute : Attribute

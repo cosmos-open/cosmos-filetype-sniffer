@@ -5,7 +5,7 @@ using System.Linq;
 using System.Reflection;
 using Cosmos.Reflection;
 
-namespace Cosmos.FileTypeSniffers.Registering
+namespace Cosmos.Sniffers.FileTypeSniffers.Registering
 {
     public class FileTypeRegistrarScanner : TypeScanner
     {
@@ -13,7 +13,7 @@ namespace Cosmos.FileTypeSniffers.Registering
         private const string SKIP_ASSEMBLIES =
             "^System|^Mscorlib|^Netstandard|^Microsoft|^Autofac|^AutoMapper|^EntityFramework|^Newtonsoft|^Castle|^NLog|^Pomelo|^AspectCore|^Xunit|^Nito|^Npgsql|^Exceptionless|^MySqlConnector|^Anonymously Hosted";
 
-        public FileTypeRegistrarScanner() : base(typeof(IFileTypeRegistrar)) { }
+        public FileTypeRegistrarScanner() : base(typeof(IFileTypeFingerprint)) { }
 
         protected override string GetSkipAssembliesNamespaces() => SKIP_ASSEMBLIES;
 
