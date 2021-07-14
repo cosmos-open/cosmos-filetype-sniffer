@@ -13,7 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\Cosmos.Extensions.FileTypeSniffer.Library.Zip\Cosmos.Extensions.FileTypeSniffer.Library.Zip.csproj" />
-    <ProjectReference Include="..\..\src\Cosmos.Extensions.FileTypeSniffer.Extensions.Autofac\Cosmos.Extensions.FileTypeSniffer.Extensions.Autofac.csproj" />
+    <ProjectReference Include="..\..\src\Cosmos.Extensions.FileTypeSniffer.Extra.Autofac\Cosmos.Extensions.FileTypeSniffer.Extra.Autofac.csproj" />
     <ProjectReference Include="..\..\src\Cosmos.Extensions.FileTypeSniffer\Cosmos.Extensions.FileTypeSniffer.csproj" />
   </ItemGroup>
 

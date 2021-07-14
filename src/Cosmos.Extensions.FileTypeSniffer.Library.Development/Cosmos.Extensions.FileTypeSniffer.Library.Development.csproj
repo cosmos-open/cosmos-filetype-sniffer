@@ -1,11 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <Import Project="Cosmos.Extensions.FileTypeSniffer.Library.Development._shared.props" />
+    <PropertyGroup>
+        <Configurations>Debug;Release</Configurations>
+        <Platforms>AnyCPU</Platforms>
+    </PropertyGroup>
+
+    <Import Project="project.props" />
 
     <Import Project="..\..\common.props" />
 
-  <ItemGroup>
-    <ProjectReference Include="..\Cosmos.Extensions.FileTypeSniffer\Cosmos.Extensions.FileTypeSniffer.csproj" />
-  </ItemGroup>
+    <Import Project="project.dependency.props" />
 
 </Project>

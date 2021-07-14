@@ -1,0 +1,9 @@
+<Project>
+
+    <PropertyGroup>
+        <AssemblyName>Cosmos.FileTypeSniffer.Extra.AspectCoreInjector</AssemblyName>
+        <PackageId>Cosmos.Extensions.FileTypeSniffer.Extra.AspectCoreInjector</PackageId>
+        <Description>Extra package for NCC AspectCore DependencyInjection extensions and Cosmos FileTypeSniffer business extensions.</Description>
+    </PropertyGroup>
+
+</Project>

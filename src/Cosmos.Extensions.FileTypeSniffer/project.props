@@ -1,9 +1,9 @@
-﻿<Project>
+<Project>
 
     <PropertyGroup>
         <AssemblyName>Cosmos.Extensions.FileTypeSniffer</AssemblyName>
         <PackageId>Cosmos.Extensions.FileTypeSniffer</PackageId>
         <Description>File extension name sniffer for Cosmos Business Extensions.</Description>
     </PropertyGroup>
-    
+
 </Project>

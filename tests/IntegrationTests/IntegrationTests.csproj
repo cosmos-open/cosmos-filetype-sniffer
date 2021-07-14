@@ -13,13 +13,13 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\Cosmos.Extensions.FileTypeSniffer.Library.Zip\Cosmos.Extensions.FileTypeSniffer.Library.Zip.csproj" />
-    <ProjectReference Include="..\..\src\Cosmos.Extensions.FileTypeSniffer.Extensions.DependencyInjection\Cosmos.Extensions.FileTypeSniffer.Extensions.DependencyInjection.csproj" />
     <ProjectReference Include="..\..\src\Cosmos.Extensions.FileTypeSniffer.Library.Development\Cosmos.Extensions.FileTypeSniffer.Library.Development.csproj" />
     <ProjectReference Include="..\..\src\Cosmos.Extensions.FileTypeSniffer.Library.Image\Cosmos.Extensions.FileTypeSniffer.Library.Image.csproj" />
     <ProjectReference Include="..\..\src\Cosmos.Extensions.FileTypeSniffer.Library.Media\Cosmos.Extensions.FileTypeSniffer.Library.Media.csproj" />
     <ProjectReference Include="..\..\src\Cosmos.Extensions.FileTypeSniffer.Library.Office\Cosmos.Extensions.FileTypeSniffer.Library.Office.csproj" />
     <ProjectReference Include="..\..\src\Cosmos.Extensions.FileTypeSniffer.Library.Science\Cosmos.Extensions.FileTypeSniffer.Library.Science.csproj" />
     <ProjectReference Include="..\..\src\Cosmos.Extensions.FileTypeSniffer\Cosmos.Extensions.FileTypeSniffer.csproj" />
+    <ProjectReference Include="..\..\src\Cosmos.Extensions.FileTypeSniffer.Extra.DependencyInjection\Cosmos.Extensions.FileTypeSniffer.Extra.DependencyInjection.csproj" />
   </ItemGroup>
 
 </Project>

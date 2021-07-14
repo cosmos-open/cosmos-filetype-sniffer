@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Extensions.FileTypeS
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8D862999-D756-4D00-8FEB-97567921CB2E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "library", "library", "{6D3ACA27-C2C3-4051-B6B7-8630D2D2A796}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ex-library", "ex-library", "{6D3ACA27-C2C3-4051-B6B7-8630D2D2A796}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Extensions.FileTypeSniffer.Library.Office", "src\Cosmos.Extensions.FileTypeSniffer.Library.Office\Cosmos.Extensions.FileTypeSniffer.Library.Office.csproj", "{C9C4A5F7-E895-45F7-9DE7-3F702A5AFEEF}"
 EndProject
@@ -25,49 +25,62 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{8A8A59A5
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{6C96F984-F79A-4D92-B2E6-18C61FDAEDA4}"
 ProjectSection(SolutionItems) = preProject
-	build\PublishBetaVersion_Script.bat = build\PublishBetaVersion_Script.bat
-	build\PublishNightlyVersion_Script.bat = build\PublishNightlyVersion_Script.bat
-	build\PublishReleaseVersion_Script.bat = build\PublishReleaseVersion_Script.bat
+	build\Beta.bat = build\Beta.bat
+	build\Beta_Withoutbuild.bat = build\Beta_Withoutbuild.bat
+	build\Nightly.bat = build\Nightly.bat
+	build\Nightly_Withoutbuild.bat = build\Nightly_Withoutbuild.bat
+	build\Release.bat = build\Release.bat
+	build\Release_Withoutbuild.bat = build\Release_Withoutbuild.bat
 EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicMsdiTests", "tests\BasicMsdiTests\BasicMsdiTests.csproj", "{6DBC4594-E661-4A1C-901C-584E4A1393C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicMsdiTests", "tests\BasicMsdiTests\BasicMsdiTests.csproj", "{6DBC4594-E661-4A1C-901C-584E4A1393C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicAutofacTests", "tests\BasicAutofacTests\BasicAutofacTests.csproj", "{1E904560-3E46-4F23-B13E-FDE623743D39}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicAutofacTests", "tests\BasicAutofacTests\BasicAutofacTests.csproj", "{1E904560-3E46-4F23-B13E-FDE623743D39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegrationTests", "tests\IntegrationTests\IntegrationTests.csproj", "{BEEFEF04-7B93-492C-B053-75E7BE2506A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntegrationTests", "tests\IntegrationTests\IntegrationTests.csproj", "{BEEFEF04-7B93-492C-B053-75E7BE2506A4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{1311CDD6-A23E-487B-A883-1910F6DE7593}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.Business.Samples", "samples\Cosmos.Business.Samples\Cosmos.Business.Samples.csproj", "{158903A1-2670-45FF-8A51-2E427CCB7747}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Business.Samples", "samples\Cosmos.Business.Samples\Cosmos.Business.Samples.csproj", "{158903A1-2670-45FF-8A51-2E427CCB7747}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{C15B1D22-86A9-4B44-A643-779B3652B0F1}"
-ProjectSection(SolutionItems) = preProject
-	README.md = README.md
-EndProjectSection
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "asset", "asset", "{4D27E52A-1018-4AAD-9C8B-7D41F952A76B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{6502B255-C031-40E3-B9BB-5FC032C75B59}"
-ProjectSection(SolutionItems) = preProject
-	asset\images\icon.back.png = asset\images\icon.back.png
-	asset\images\icon.png = asset\images\icon.png
-EndProjectSection
+	ProjectSection(SolutionItems) = preProject
+		asset\images\icon.back.png = asset\images\icon.back.png
+		asset\images\icon.png = asset\images\icon.png
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "props", "props", "{E41CF0D6-2140-45D7-ACDB-D57353E80818}"
-ProjectSection(SolutionItems) = preProject
-	asset\props\misc.props = asset\props\misc.props
-	asset\props\package.props = asset\props\package.props
-EndProjectSection
+	ProjectSection(SolutionItems) = preProject
+		asset\props\misc.props = asset\props\misc.props
+		asset\props\package.props = asset\props\package.props
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution", "solution", "{C72B826D-A01B-4949-8679-6C83AC9ADDEC}"
-ProjectSection(SolutionItems) = preProject
-	.gitignore = .gitignore
-	common.props = common.props
-	common.tests.props = common.tests.props
-	LICENSE = LICENSE
-	logo.png = logo.png
-	README.md = README.md
-EndProjectSection
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		common.props = common.props
+		common.tests.props = common.tests.props
+		LICENSE = LICENSE
+		logo.png = logo.png
+		README.md = README.md
+		asset\version.dev.props = asset\version.dev.props
+		asset\version.props = asset\version.props
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Extensions.FileTypeSniffer.Extra.AspectCoreInjector", "src\Cosmos.Extensions.FileTypeSniffer.Extra.AspectCoreInjector\Cosmos.Extensions.FileTypeSniffer.Extra.AspectCoreInjector.csproj", "{F9A1C09D-AC05-4D33-A58F-8A42901CBC6C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Extensions.FileTypeSniffer.Extra.DependencyInjection", "src\Cosmos.Extensions.FileTypeSniffer.Extra.DependencyInjection\Cosmos.Extensions.FileTypeSniffer.Extra.DependencyInjection.csproj", "{7DB05080-76B3-48FD-A3A0-7358D5416834}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmos.Extensions.FileTypeSniffer.Extra.Autofac", "src\Cosmos.Extensions.FileTypeSniffer.Extra.Autofac\Cosmos.Extensions.FileTypeSniffer.Extra.Autofac.csproj", "{75C86AB5-26F2-4C33-83EF-B7E003713975}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ex-dependency", "ex-dependency", "{4F8F733B-33A4-44D3-8F87-73BAD77451A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -119,6 +132,18 @@ Global
 		{158903A1-2670-45FF-8A51-2E427CCB7747}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{158903A1-2670-45FF-8A51-2E427CCB7747}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{158903A1-2670-45FF-8A51-2E427CCB7747}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9A1C09D-AC05-4D33-A58F-8A42901CBC6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9A1C09D-AC05-4D33-A58F-8A42901CBC6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9A1C09D-AC05-4D33-A58F-8A42901CBC6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9A1C09D-AC05-4D33-A58F-8A42901CBC6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DB05080-76B3-48FD-A3A0-7358D5416834}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DB05080-76B3-48FD-A3A0-7358D5416834}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DB05080-76B3-48FD-A3A0-7358D5416834}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DB05080-76B3-48FD-A3A0-7358D5416834}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75C86AB5-26F2-4C33-83EF-B7E003713975}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75C86AB5-26F2-4C33-83EF-B7E003713975}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75C86AB5-26F2-4C33-83EF-B7E003713975}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75C86AB5-26F2-4C33-83EF-B7E003713975}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -138,6 +163,10 @@ Global
 		{158903A1-2670-45FF-8A51-2E427CCB7747} = {1311CDD6-A23E-487B-A883-1910F6DE7593}
 		{6502B255-C031-40E3-B9BB-5FC032C75B59} = {4D27E52A-1018-4AAD-9C8B-7D41F952A76B}
 		{E41CF0D6-2140-45D7-ACDB-D57353E80818} = {4D27E52A-1018-4AAD-9C8B-7D41F952A76B}
+		{4F8F733B-33A4-44D3-8F87-73BAD77451A7} = {8D862999-D756-4D00-8FEB-97567921CB2E}
+		{F9A1C09D-AC05-4D33-A58F-8A42901CBC6C} = {4F8F733B-33A4-44D3-8F87-73BAD77451A7}
+		{75C86AB5-26F2-4C33-83EF-B7E003713975} = {4F8F733B-33A4-44D3-8F87-73BAD77451A7}
+		{7DB05080-76B3-48FD-A3A0-7358D5416834} = {4F8F733B-33A4-44D3-8F87-73BAD77451A7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {93F5CBB1-09D3-41FE-BE89-EC0ECB4CA363}

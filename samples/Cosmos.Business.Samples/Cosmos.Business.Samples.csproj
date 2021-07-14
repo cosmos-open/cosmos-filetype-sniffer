@@ -12,7 +12,7 @@
 
 
     <ItemGroup>
-      <ProjectReference Include="..\..\src\Cosmos.Extensions.FileTypeSniffer.Extensions.DependencyInjection\Cosmos.Extensions.FileTypeSniffer.Extensions.DependencyInjection.csproj" />
+      <ProjectReference Include="..\..\src\Cosmos.Extensions.FileTypeSniffer.Extra.DependencyInjection\Cosmos.Extensions.FileTypeSniffer.Extra.DependencyInjection.csproj" />
       <ProjectReference Include="..\..\src\Cosmos.Extensions.FileTypeSniffer.Library.Image\Cosmos.Extensions.FileTypeSniffer.Library.Image.csproj" />
     </ItemGroup>
 

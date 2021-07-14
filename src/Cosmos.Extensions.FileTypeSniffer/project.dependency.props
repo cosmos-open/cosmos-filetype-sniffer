@@ -1,0 +1,8 @@
+<Project>
+
+    <ItemGroup>
+        <PackageReference Include="Cosmos.Standard" Version="$(Standard-PkgVersion)" />
+        <PackageReference Include="Cosmos.Extensions.Dependency" Version="$(Dependency-PkgVersion)" />
+    </ItemGroup>
+
+</Project>
