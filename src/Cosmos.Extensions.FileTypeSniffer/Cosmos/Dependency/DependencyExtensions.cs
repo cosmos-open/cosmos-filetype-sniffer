@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using Cosmos.FileTypeSniffers;
-using Cosmos.FileTypeSniffers.Core;
-using Cosmos.FileTypeSniffers.Providers;
-using Cosmos.FileTypeSniffers.Registering;
+using Cosmos.Sniffers;
+using Cosmos.Sniffers.FileTypeSniffers;
+using Cosmos.Sniffers.FileTypeSniffers.Core;
+using Cosmos.Sniffers.FileTypeSniffers.Providers;
+using Cosmos.Sniffers.FileTypeSniffers.Registering;
 
 namespace Cosmos.Dependency
 {
