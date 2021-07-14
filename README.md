@@ -19,8 +19,9 @@ This project refers to the design of a part of [rocketRobin/myrmec](https://gith
 | [Cosmos.Extensions.FileTypeSniffer.Library.Office](https://www.nuget.org/packages/Cosmos.Extensions.FileTypeSniffer.Library.Office/)                                 | ![](https://img.shields.io/nuget/v/Cosmos.Extensions.FileTypeSniffer.Library.Office.svg)                 | ![](https://img.shields.io/nuget/dt/Cosmos.Extensions.FileTypeSniffer.Library.Office.svg)                 |
 | [Cosmos.Extensions.FileTypeSniffer.Library.Science](https://www.nuget.org/packages/Cosmos.Extensions.FileTypeSniffer.Library.Science/)                               | ![](https://img.shields.io/nuget/v/Cosmos.Extensions.FileTypeSniffer.Library.Science.svg)                | ![](https://img.shields.io/nuget/dt/Cosmos.Extensions.FileTypeSniffer.Library.Science.svg)                |
 | [Cosmos.Extensions.FileTypeSniffer.Library.Zip](https://www.nuget.org/packages/Cosmos.Extensions.FileTypeSniffer.Library.Zip/)                                       | ![](https://img.shields.io/nuget/v/Cosmos.Extensions.FileTypeSniffer.Library.Zip.svg)                    | ![](https://img.shields.io/nuget/dt/Cosmos.Extensions.FileTypeSniffer.Library.Zip.svg)                    |
-| [Cosmos.Extensions.FileTypeSniffer.Extensions.DependencyInjection](https://www.nuget.org/packages/Cosmos.Extensions.FileTypeSniffer.Extensions.DependencyInjection/) | ![](https://img.shields.io/nuget/v/Cosmos.Extensions.FileTypeSniffer.Extensions.DependencyInjection.svg) | ![](https://img.shields.io/nuget/dt/Cosmos.Extensions.FileTypeSniffer.Extensions.DependencyInjection.svg) |
-| [Cosmos.Extensions.FileTypeSniffer.Extensions.Autofac](https://www.nuget.org/packages/Cosmos.Extensions.FileTypeSniffer.Extensions.Autofac/)                         | ![](https://img.shields.io/nuget/v/Cosmos.Extensions.FileTypeSniffer.Extensions.Autofac.svg)             | ![](https://img.shields.io/nuget/dt/Cosmos.Extensions.FileTypeSniffer.Extensions.Autofac.svg)             |
+| [Cosmos.Extensions.FileTypeSniffer.Extra.DependencyInjection](https://www.nuget.org/packages/Cosmos.Extensions.FileTypeSniffer.Extra.DependencyInjection/)           | ![](https://img.shields.io/nuget/v/Cosmos.Extensions.FileTypeSniffer.Extra.DependencyInjection.svg)      | ![](https://img.shields.io/nuget/dt/Cosmos.Extensions.FileTypeSniffer.Extra.DependencyInjection.svg)      |
+| [Cosmos.Extensions.FileTypeSniffer.Extra.Autofac](https://www.nuget.org/packages/Cosmos.Extensions.FileTypeSniffer.Extra.Autofac/)                                   | ![](https://img.shields.io/nuget/v/Cosmos.Extensions.FileTypeSniffer.Extra.Autofac.svg)                  | ![](https://img.shields.io/nuget/dt/Cosmos.Extensions.FileTypeSniffer.Extra.Autofac.svg)                  |
+| [Cosmos.Extensions.FileTypeSniffer.Extra.AspectCoreInjector](https://www.nuget.org/packages/Cosmos.Extensions.FileTypeSniffer.Extra.AspectCoreInjector/)             | ![](https://img.shields.io/nuget/v/Cosmos.Extensions.FileTypeSniffer.Extra.AspectCoreInjector.svg)       | ![](https://img.shields.io/nuget/dt/Cosmos.Extensions.FileTypeSniffer.Extra.AspectCoreInjector.svg)       |
 
 ## Usage
 
@@ -29,8 +30,8 @@ This project refers to the design of a part of [rocketRobin/myrmec](https://gith
 Choose one kind of dependency extensions that you need and install it via nuget.
 
 ```
-Install-Package Cosmos.Extensions.FileTypeSniffer.Extensions.DependencyInjection
-Install-Package Cosmos.Extensions.FileTypeSniffer.Extensions.Autofac
+Install-Package Cosmos.Extensions.FileTypeSniffer.Extra.DependencyInjection
+Install-Package Cosmos.Extensions.FileTypeSniffer.Extra.Autofac
 ```
 
 or use directly
@@ -50,7 +51,7 @@ public class Startup
     public void ConfigureServices(IServiceCollection services)
     {
         //configuration
-        services.AddFileTypeSniffer();
+        services.AddCosmosFileTypeSniffer();
     }
 }
 ```
@@ -106,7 +107,7 @@ Currently available file types are:
 | development | .aar, .apd, .avro, .class, .crx, .dat, .deb, .der, dex, .jar, .orc, .pdb, .rpm, .vmdk, .wasm, .xml                                                                            |
 | image       | .bmp, .bpg, .cin, .cr2, .dib, .dpx, .exr, .fh8, .flif, .gif, .ico, .jp2, .jpg, .jpeg, .mlv, .png, .ps, .psd, .tbi, tif, .tiff                                                 |
 | media       | .3g2, .3gp, .asf, .dat, .flac, .iso, .m2p, .mdf, .mid, .midi, .mkv, .mka, .mks, .mk3d, mp3, .mpg, .mpg2, .mpeg, .nes, .ogg, .oga, .ogv, .swf, .toast, .vob, .webm, .wma, .wmv |
-| office      | .cwk, .doc, .docx, .msg, .odp, .ods, .odt, .pdf, .ppt, .pptx, .rtf, .ttf, .vsdx, .woff, .woff2, .xls, .xlsx                                                                   |
+| office      | .cwk, .doc, .docx, .msg, .odp, .ods, .odt, .pdf, .ppt, .pptx, .rtf, .ttf, .vsdx, .woff, .woff2, .xls, .xlsx, .wps, .et, .dps, .emmx, .eddx                                    |
 | science     | .fits                                                                                                                                                                         |
 | zip         | .7z, .cab, .gz, .tar.gz, .lz4, .lzfse, .rar, .tar, .xar, .xz, .tar.xz, .z, .tar.z, .zip, .zlib                                                                                |
 
