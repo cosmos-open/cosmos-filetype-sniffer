@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using Cosmos.FileTypeSniffers.Core;
+using Cosmos.Sniffers.FileTypeSniffers.Core;
 
-namespace Cosmos.FileTypeSniffers
+namespace Cosmos.Sniffers.FileTypeSniffers
 {
     public class FileTypeSnifferOptions
     {

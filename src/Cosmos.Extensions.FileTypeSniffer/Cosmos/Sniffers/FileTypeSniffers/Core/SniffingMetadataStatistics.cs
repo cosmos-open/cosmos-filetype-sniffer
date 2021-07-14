@@ -1,14 +1,14 @@
-﻿namespace Cosmos.FileTypeSniffers.Core
+﻿namespace Cosmos.Sniffers.FileTypeSniffers.Core
 {
     internal class SniffingMetadataStatistics
     {
-        private readonly object _lockObj = new object();
+        private readonly object _lockObj = new();
 
         public int Total => SimpleCount + ComplexCount;
 
-        public int SimpleCount { get; private set; } = 0;
+        public int SimpleCount { get; private set; }
 
-        public int ComplexCount { get; private set; } = 0;
+        public int ComplexCount { get; private set; }
 
         internal void UpdateSimpleMetadata(int increase)
         {

@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using Cosmos.FileTypeSniffers.Core;
+using Cosmos.Sniffers.FileTypeSniffers.Core;
 
-namespace Cosmos.FileTypeSniffers
+namespace Cosmos.Sniffers.FileTypeSniffers
 {
     public class FileTypeSniffer : IFileTypeSniffer
     {
@@ -76,6 +76,6 @@ namespace Cosmos.FileTypeSniffers
             }
         }
 
-        public SniffingReadOnlyMetadataStatistics GetMetadataStatistics() => new SniffingReadOnlyMetadataStatistics(_metadataStatistics);
+        public SniffingReadOnlyMetadataStatistics GetMetadataStatistics() => new(_metadataStatistics);
     }
 }

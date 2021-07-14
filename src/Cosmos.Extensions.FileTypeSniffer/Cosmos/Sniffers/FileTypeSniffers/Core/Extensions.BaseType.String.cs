@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace Cosmos.FileTypeSniffers.Core
+namespace Cosmos.Sniffers.FileTypeSniffers.Core
 {
     internal static class StringExtensions
     {

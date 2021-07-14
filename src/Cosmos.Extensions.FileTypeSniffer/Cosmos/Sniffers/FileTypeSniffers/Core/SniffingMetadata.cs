@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Cosmos.FileTypeSniffers.Registering;
+using Cosmos.Sniffers.FileTypeSniffers.Registering;
 
-namespace Cosmos.FileTypeSniffers.Core
+namespace Cosmos.Sniffers.FileTypeSniffers.Core
 {
     public class SniffingMetadata
     {

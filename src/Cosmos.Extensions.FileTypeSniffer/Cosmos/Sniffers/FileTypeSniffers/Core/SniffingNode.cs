@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Cosmos.FileTypeSniffers.Core
+namespace Cosmos.Sniffers.FileTypeSniffers.Core
 {
     public class SniffingNode
     {

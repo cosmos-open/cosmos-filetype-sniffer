@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Cosmos.FileTypeSniffers.Core
+namespace Cosmos.Sniffers.FileTypeSniffers.Core
 {
     internal static class CharExtensions
     {

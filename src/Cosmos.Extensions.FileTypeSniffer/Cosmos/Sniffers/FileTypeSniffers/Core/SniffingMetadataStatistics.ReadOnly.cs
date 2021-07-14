@@ -1,4 +1,4 @@
-﻿namespace Cosmos.FileTypeSniffers.Core
+﻿namespace Cosmos.Sniffers.FileTypeSniffers.Core
 {
     public class SniffingReadOnlyMetadataStatistics
     {

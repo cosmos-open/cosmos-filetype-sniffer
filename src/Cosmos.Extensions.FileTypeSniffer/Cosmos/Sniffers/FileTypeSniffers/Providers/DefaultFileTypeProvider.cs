@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Cosmos.FileTypeSniffers.Core;
-using Cosmos.FileTypeSniffers.Registering;
+using Cosmos.Sniffers.FileTypeSniffers.Core;
+using Cosmos.Sniffers.FileTypeSniffers.Registering;
 
-namespace Cosmos.FileTypeSniffers.Providers
+namespace Cosmos.Sniffers.FileTypeSniffers.Providers
 {
     public class DefaultFileTypeProvider : ISniffingDescriptorProvider
     {

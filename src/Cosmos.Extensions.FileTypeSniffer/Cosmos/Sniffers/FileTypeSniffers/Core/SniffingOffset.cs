@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace Cosmos.FileTypeSniffers.Core
+namespace Cosmos.Sniffers.FileTypeSniffers.Core
 {
     public class SniffingOffset
     {
