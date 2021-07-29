@@ -5,6 +5,9 @@ using Cosmos.Sniffers.FileTypeSniffers.Core;
 
 namespace Cosmos.Sniffers.FileTypeSniffers
 {
+    /// <summary>
+    /// Expected file type sniffer
+    /// </summary>
     public class ExpectedFileTypeSniffer : IFileTypeSniffer
     {
         private readonly IFileTypeSniffer _innerSniffer;

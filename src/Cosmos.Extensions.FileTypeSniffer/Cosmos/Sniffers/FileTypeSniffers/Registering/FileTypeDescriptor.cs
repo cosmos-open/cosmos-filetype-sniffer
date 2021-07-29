@@ -26,7 +26,7 @@ namespace Cosmos.Sniffers.FileTypeSniffers.Registering
         {
             if (string.IsNullOrWhiteSpace(ExtensionNames.Trim()))
                 return Enumerable.Empty<string>().ToList();
-            if (separators == null || !separators.Any())
+            if (separators is null || !separators.Any())
                 separators = new[] {',', ' '};
             return ExtensionNames.Split(separators).ToList();
         }
@@ -48,7 +48,7 @@ namespace Cosmos.Sniffers.FileTypeSniffers.Registering
 
         private void CheckType(Type type)
         {
-            if (type == null)
+            if (type is null)
                 throw new ArgumentNullException(nameof(type));
 
             if (!typeof(IFileTypeFingerprint).IsAssignableFrom(type))
