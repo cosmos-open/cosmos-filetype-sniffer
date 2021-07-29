@@ -1,4 +1,4 @@
-# COSMOSLOOPS/FileTypeSniffer
+# Cosmos FileTypeSniffer Overview
 
 File type sniffer component, a library that used to identify the real type of physical file via infering the head of the file binary information.
 
@@ -132,6 +132,6 @@ People or projects that have made a great contribution to this project:
 
 ## License
 
-Member project of [COSMOS LOOPS PROGRAMME](https://github.com/cosmos-loops).
+Member project of [Cosmosloops Labs.](https://github.com/cosmos-loops).
 
-[Apache 2.0 License](/LICENSE)
+[Apache License 2.0](/LICENSE)
