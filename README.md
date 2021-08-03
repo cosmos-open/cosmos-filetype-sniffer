@@ -105,7 +105,7 @@ Currently available file types are:
 | :---------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | core        | .bac, .bin, .dmg, .exe, .rc, .stg, .tox                                                                                                                                       |
 | development | .aar, .apd, .avro, .class, .crx, .dat, .deb, .der, dex, .jar, .orc, .pdb, .rpm, .vmdk, .wasm, .xml                                                                            |
-| image       | .bmp, .bpg, .cin, .cr2, .dib, .dpx, .exr, .fh8, .flif, .gif, .ico, .jp2, .jpg, .jpeg, .mlv, .png, .ps, .psd, .tbi, tif, .tiff                                                 |
+| image       | .bmp, .bpg, .cin, .cr2, .dib, .dpx, .exr, .fh8, .flif, .gif, .ico, .jp2, .jpg, .jpeg, .mlv, .png, .ps, .psd, .tbi, tif, .tiff, .xbm, xpm                                      |
 | media       | .3g2, .3gp, .asf, .dat, .flac, .iso, .m2p, .mdf, .mid, .midi, .mkv, .mka, .mks, .mk3d, mp3, .mpg, .mpg2, .mpeg, .nes, .ogg, .oga, .ogv, .swf, .toast, .vob, .webm, .wma, .wmv |
 | office      | .awz3, .cwk, .doc, .docx, .dps, .eddx, .emmx, .epub, .et, .mobi, .msg, .odp, .ods, .odt, .pdf, .ppt, .pptx, .rtf, .ttf, .vsdx, .woff, .woff2, .wps, .xls, .xlsx, .xmind       |
 | science     | .fits                                                                                                                                                                         |
