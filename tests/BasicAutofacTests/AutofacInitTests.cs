@@ -1,7 +1,8 @@
 using Autofac;
-using Cosmos.Sniffers;
+using CosmosStack.Sniffers;
 using Xunit;
 
+// ReSharper disable once CheckNamespace
 namespace BasicAutofacTests
 {
     public class AutofacInitTests
