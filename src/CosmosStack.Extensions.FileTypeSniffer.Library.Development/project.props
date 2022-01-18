@@ -1,0 +1,9 @@
+<Project>
+
+  <PropertyGroup>
+    <AssemblyName>CosmosStack.Extensions.FileTypeSniffer.Library.Development</AssemblyName>
+    <PackageId>CosmosStack.Extensions.FileTypeSniffer.Library.Development</PackageId>
+    <Description>Fingerprint library for development class files for Cosmos Business file type sniffer Extensions.</Description>
+  </PropertyGroup>
+
+</Project>

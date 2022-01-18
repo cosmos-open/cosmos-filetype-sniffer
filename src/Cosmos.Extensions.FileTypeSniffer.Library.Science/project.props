@@ -1,9 +1,0 @@
-<Project>
-
-  <PropertyGroup>
-    <AssemblyName>Cosmos.Extensions.FileTypeSniffer.Library.Science</AssemblyName>
-    <PackageId>Cosmos.Extensions.FileTypeSniffer.Library.Science</PackageId>
-    <Description>Fingerprint library for science class files for Cosmos Business file type sniffer Extensions.</Description>
-  </PropertyGroup>
-
-</Project>

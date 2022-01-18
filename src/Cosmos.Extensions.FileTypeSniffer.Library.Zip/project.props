@@ -1,9 +1,0 @@
-<Project>
-
-  <PropertyGroup>
-    <AssemblyName>Cosmos.Extensions.FileTypeSniffer.Library.Zip</AssemblyName>
-    <PackageId>Cosmos.Extensions.FileTypeSniffer.Library.Zip</PackageId>
-    <Description>Fingerprint library for zip class files for Cosmos Business file type sniffer Extensions.</Description>
-  </PropertyGroup>
-
-</Project>

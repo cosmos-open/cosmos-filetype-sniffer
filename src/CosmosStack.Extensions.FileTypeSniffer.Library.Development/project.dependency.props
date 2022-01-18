@@ -1,0 +1,7 @@
+<Project>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CosmosStack.Extensions.FileTypeSniffer\CosmosStack.Extensions.FileTypeSniffer.csproj" />
+  </ItemGroup>
+
+</Project>
