@@ -1,8 +1,8 @@
-# Cosmos FileTypeSniffer Overview
+# CosmosStack FileTypeSniffer Overview
 
-File type sniffer component, a library that used to identify the real type of physical file via infering the head of the file binary information.
+File type sniffer component, a library that used to identify the real type of physical file via inferring the head of the file binary information.
 
-This repository belongs to [Open Cosmos](https://github.com/cosmos-open) Project, a part of [COSMOS LOOPS PROGRAMME](https://github.com/cosmos-loops/).
+This repository belongs to [Open Cosmos](https://github.com/cosmos-open) Project, a part of [Cosmos Stack](https://github.com/cosmos-stack/).
 
 This project refers to the design of a part of [rocketRobin/myrmec](https://github.com/rocketRobin/myrmec), so much thx to Rocket Robin!
 
@@ -12,16 +12,16 @@ This project refers to the design of a part of [rocketRobin/myrmec](https://gith
 
 | Package Name                                                                                                                                                                           | Version                                                                                                           | Downloads                                                                                                          |
 | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------- |
-| [Cosmos.Extensions.FileTypeSniffer](https://www.nuget.org/packages/Cosmos.Extensions.FileTypeSniffer/)                                                               | ![](https://img.shields.io/nuget/v/Cosmos.Extensions.FileTypeSniffer.svg)                                | ![](https://img.shields.io/nuget/dt/Cosmos.Extensions.FileTypeSniffer.svg)                                |
-| [Cosmos.Extensions.FileTypeSniffer.Library.Development](https://www.nuget.org/packages/Cosmos.Extensions.FileTypeSniffer.Library.Development/)                       | ![](https://img.shields.io/nuget/v/Cosmos.Extensions.FileTypeSniffer.Library.Development.svg)            | ![](https://img.shields.io/nuget/dt/Cosmos.Extensions.FileTypeSniffer.Library.Development.svg)            |
-| [Cosmos.Extensions.FileTypeSniffer.Library.Image](https://www.nuget.org/packages/Cosmos.Extensions.FileTypeSniffer.Library.Image/)                                   | ![](https://img.shields.io/nuget/v/Cosmos.Extensions.FileTypeSniffer.Library.Image.svg)                  | ![](https://img.shields.io/nuget/dt/Cosmos.Extensions.FileTypeSniffer.Library.Image.svg)                  |
-| [Cosmos.Extensions.FileTypeSniffer.Library.Media](https://www.nuget.org/packages/Cosmos.Extensions.FileTypeSniffer.Library.Media/)                                   | ![](https://img.shields.io/nuget/v/Cosmos.Extensions.FileTypeSniffer.Library.Media.svg)                  | ![](https://img.shields.io/nuget/dt/Cosmos.Extensions.FileTypeSniffer.Library.Media.svg)                  |
-| [Cosmos.Extensions.FileTypeSniffer.Library.Office](https://www.nuget.org/packages/Cosmos.Extensions.FileTypeSniffer.Library.Office/)                                 | ![](https://img.shields.io/nuget/v/Cosmos.Extensions.FileTypeSniffer.Library.Office.svg)                 | ![](https://img.shields.io/nuget/dt/Cosmos.Extensions.FileTypeSniffer.Library.Office.svg)                 |
-| [Cosmos.Extensions.FileTypeSniffer.Library.Science](https://www.nuget.org/packages/Cosmos.Extensions.FileTypeSniffer.Library.Science/)                               | ![](https://img.shields.io/nuget/v/Cosmos.Extensions.FileTypeSniffer.Library.Science.svg)                | ![](https://img.shields.io/nuget/dt/Cosmos.Extensions.FileTypeSniffer.Library.Science.svg)                |
-| [Cosmos.Extensions.FileTypeSniffer.Library.Zip](https://www.nuget.org/packages/Cosmos.Extensions.FileTypeSniffer.Library.Zip/)                                       | ![](https://img.shields.io/nuget/v/Cosmos.Extensions.FileTypeSniffer.Library.Zip.svg)                    | ![](https://img.shields.io/nuget/dt/Cosmos.Extensions.FileTypeSniffer.Library.Zip.svg)                    |
-| [Cosmos.Extensions.FileTypeSniffer.Extra.DependencyInjection](https://www.nuget.org/packages/Cosmos.Extensions.FileTypeSniffer.Extra.DependencyInjection/)           | ![](https://img.shields.io/nuget/v/Cosmos.Extensions.FileTypeSniffer.Extra.DependencyInjection.svg)      | ![](https://img.shields.io/nuget/dt/Cosmos.Extensions.FileTypeSniffer.Extra.DependencyInjection.svg)      |
-| [Cosmos.Extensions.FileTypeSniffer.Extra.Autofac](https://www.nuget.org/packages/Cosmos.Extensions.FileTypeSniffer.Extra.Autofac/)                                   | ![](https://img.shields.io/nuget/v/Cosmos.Extensions.FileTypeSniffer.Extra.Autofac.svg)                  | ![](https://img.shields.io/nuget/dt/Cosmos.Extensions.FileTypeSniffer.Extra.Autofac.svg)                  |
-| [Cosmos.Extensions.FileTypeSniffer.Extra.AspectCoreInjector](https://www.nuget.org/packages/Cosmos.Extensions.FileTypeSniffer.Extra.AspectCoreInjector/)             | ![](https://img.shields.io/nuget/v/Cosmos.Extensions.FileTypeSniffer.Extra.AspectCoreInjector.svg)       | ![](https://img.shields.io/nuget/dt/Cosmos.Extensions.FileTypeSniffer.Extra.AspectCoreInjector.svg)       |
+| [CosmosStack.Extensions.FileTypeSniffer](https://www.nuget.org/packages/CosmosStack.Extensions.FileTypeSniffer/)                                                               | ![](https://img.shields.io/nuget/v/CosmosStack.Extensions.FileTypeSniffer.svg)                                | ![](https://img.shields.io/nuget/dt/CosmosStack.Extensions.FileTypeSniffer.svg)                                |
+| [CosmosStack.Extensions.FileTypeSniffer.Library.Development](https://www.nuget.org/packages/CosmosStack.Extensions.FileTypeSniffer.Library.Development/)                       | ![](https://img.shields.io/nuget/v/CosmosStack.Extensions.FileTypeSniffer.Library.Development.svg)            | ![](https://img.shields.io/nuget/dt/CosmosStack.Extensions.FileTypeSniffer.Library.Development.svg)            |
+| [CosmosStack.Extensions.FileTypeSniffer.Library.Image](https://www.nuget.org/packages/CosmosStack.Extensions.FileTypeSniffer.Library.Image/)                                   | ![](https://img.shields.io/nuget/v/CosmosStack.Extensions.FileTypeSniffer.Library.Image.svg)                  | ![](https://img.shields.io/nuget/dt/CosmosStack.Extensions.FileTypeSniffer.Library.Image.svg)                  |
+| [CosmosStack.Extensions.FileTypeSniffer.Library.Media](https://www.nuget.org/packages/CosmosStack.Extensions.FileTypeSniffer.Library.Media/)                                   | ![](https://img.shields.io/nuget/v/CosmosStack.Extensions.FileTypeSniffer.Library.Media.svg)                  | ![](https://img.shields.io/nuget/dt/CosmosStack.Extensions.FileTypeSniffer.Library.Media.svg)                  |
+| [CosmosStack.Extensions.FileTypeSniffer.Library.Office](https://www.nuget.org/packages/CosmosStack.Extensions.FileTypeSniffer.Library.Office/)                                 | ![](https://img.shields.io/nuget/v/CosmosStack.Extensions.FileTypeSniffer.Library.Office.svg)                 | ![](https://img.shields.io/nuget/dt/CosmosStack.Extensions.FileTypeSniffer.Library.Office.svg)                 |
+| [CosmosStack.Extensions.FileTypeSniffer.Library.Science](https://www.nuget.org/packages/CosmosStack.Extensions.FileTypeSniffer.Library.Science/)                               | ![](https://img.shields.io/nuget/v/CosmosStack.Extensions.FileTypeSniffer.Library.Science.svg)                | ![](https://img.shields.io/nuget/dt/CosmosStack.Extensions.FileTypeSniffer.Library.Science.svg)                |
+| [CosmosStack.Extensions.FileTypeSniffer.Library.Zip](https://www.nuget.org/packages/CosmosStack.Extensions.FileTypeSniffer.Library.Zip/)                                       | ![](https://img.shields.io/nuget/v/CosmosStack.Extensions.FileTypeSniffer.Library.Zip.svg)                    | ![](https://img.shields.io/nuget/dt/CosmosStack.Extensions.FileTypeSniffer.Library.Zip.svg)                    |
+| [CosmosStack.Extensions.FileTypeSniffer.Extra.DependencyInjection](https://www.nuget.org/packages/CosmosStack.Extensions.FileTypeSniffer.Extra.DependencyInjection/)           | ![](https://img.shields.io/nuget/v/CosmosStack.Extensions.FileTypeSniffer.Extra.DependencyInjection.svg)      | ![](https://img.shields.io/nuget/dt/CosmosStack.Extensions.FileTypeSniffer.Extra.DependencyInjection.svg)      |
+| [CosmosStack.Extensions.FileTypeSniffer.Extra.Autofac](https://www.nuget.org/packages/CosmosStack.Extensions.FileTypeSniffer.Extra.Autofac/)                                   | ![](https://img.shields.io/nuget/v/CosmosStack.Extensions.FileTypeSniffer.Extra.Autofac.svg)                  | ![](https://img.shields.io/nuget/dt/CosmosStack.Extensions.FileTypeSniffer.Extra.Autofac.svg)                  |
+| [CosmosStack.Extensions.FileTypeSniffer.Extra.AspectCoreInjector](https://www.nuget.org/packages/CosmosStack.Extensions.FileTypeSniffer.Extra.AspectCoreInjector/)             | ![](https://img.shields.io/nuget/v/CosmosStack.Extensions.FileTypeSniffer.Extra.AspectCoreInjector.svg)       | ![](https://img.shields.io/nuget/dt/CosmosStack.Extensions.FileTypeSniffer.Extra.AspectCoreInjector.svg)       |
 
 ## Usage
 
@@ -30,14 +30,14 @@ This project refers to the design of a part of [rocketRobin/myrmec](https://gith
 Choose one kind of dependency extensions that you need and install it via nuget.
 
 ```
-Install-Package Cosmos.Extensions.FileTypeSniffer.Extra.DependencyInjection
-Install-Package Cosmos.Extensions.FileTypeSniffer.Extra.Autofac
+Install-Package CosmosStack.Extensions.FileTypeSniffer.Extra.DependencyInjection
+Install-Package CosmosStack.Extensions.FileTypeSniffer.Extra.Autofac
 ```
 
 or use directly
 
 ```
-Install-Package Cosmos.Extensions.FileTypeSniffer
+Install-Package CosmosStack.Extensions.FileTypeSniffer
 ```
 
 Install the specific file type libraries as needed.
@@ -132,6 +132,6 @@ People or projects that have made a great contribution to this project:
 
 ## License
 
-Member project of [Cosmosloops Labs.](https://github.com/cosmos-loops).
+Member project of [Cosmos Stack](https://github.com/cosmos-stack).
 
 [Apache License 2.0](/LICENSE)

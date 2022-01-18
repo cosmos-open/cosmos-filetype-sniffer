@@ -2,7 +2,7 @@
 using System.IO;
 using Microsoft.AspNetCore.Mvc;
 using Cosmos.Business.Samples.Models;
-using Cosmos.Sniffers;
+using CosmosStack.Sniffers;
 using Microsoft.AspNetCore.Hosting;
 
 namespace Cosmos.Business.Samples.Controllers
@@ -49,7 +49,7 @@ result: {results.ToListString()}
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
-            return View(new ErrorViewModel {RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier});
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }

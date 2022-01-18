@@ -3,6 +3,8 @@
     <PropertyGroup>
         <Dependency-PkgVersion>0.2.0</Dependency-PkgVersion>
         <Standard-PkgVersion>0.2.0</Standard-PkgVersion>
+        <Dependency-RefVersion>0.1.0</Dependency-RefVersion>
+        <Standard-RefVersion>0.1.1.1</Standard-RefVersion>
     </PropertyGroup>
 
 </Project>
