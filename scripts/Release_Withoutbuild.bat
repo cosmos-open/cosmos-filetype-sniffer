@@ -1,7 +1,7 @@
 @echo off
 
 echo =======================================================================
-echo CosmosStack.FileTypeSniffer (Without Build)
+echo Cosmos.FileTypeSniffer (Without Build)
 echo =======================================================================
 
 ::go to parent folder
@@ -14,9 +14,9 @@ if not exist nuget_packages (
 )
 
 ::push nuget packages to server
-for /R "nuget_packages" %%s in (*.nupkg) do ( 	
+for /R "nuget_packages" %%s in (*.nupkg) do (
     dotnet nuget push "%%s" -s "Release" --skip-duplicate
-	echo.
+    echo.
 )
 
 ::get back to build folder
