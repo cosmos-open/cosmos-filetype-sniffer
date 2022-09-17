@@ -12,8 +12,8 @@
 
 
     <ItemGroup>
-      <ProjectReference Include="..\..\src\CosmosStack.Extensions.FileTypeSniffer.Extra.DependencyInjection\CosmosStack.Extensions.FileTypeSniffer.Extra.DependencyInjection.csproj" />
-      <ProjectReference Include="..\..\src\CosmosStack.Extensions.FileTypeSniffer.Library.Image\CosmosStack.Extensions.FileTypeSniffer.Library.Image.csproj" />
+      <ProjectReference Include="..\..\src\Cosmos.FileTypeSniffer.DependOn.DependencyInjection\Cosmos.FileTypeSniffer.DependOn.DependencyInjection.csproj" />
+      <ProjectReference Include="..\..\src\Cosmos.FileTypeSniffer.Definitions.Image\Cosmos.FileTypeSniffer.Definitions.Image.csproj" />
     </ItemGroup>
 
 </Project>
