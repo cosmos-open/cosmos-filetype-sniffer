@@ -1,29 +1,28 @@
 using Autofac;
-using CosmosStack.Sniffers;
+using Cosmos.Sniffers;
 using Xunit;
 
 // ReSharper disable once CheckNamespace
-namespace BasicAutofacTests
+namespace BasicAutofacTests;
+
+public class AutofacInitTests
 {
-    public class AutofacInitTests
+    [Fact]
+    public void AutofacTest()
     {
-        [Fact]
-        public void AutofacTest()
+        var builder = new ContainerBuilder();
+        builder.RegisterCosmosFileTypeSniffer();
+        var container = builder.Build();
+
+        using (var scope = container.BeginLifetimeScope())
         {
-            var builder = new ContainerBuilder();
-            builder.RegisterCosmosFileTypeSniffer();
-            var container = builder.Build();
+            var sniffer = scope.Resolve<IFileTypeSniffer>();
 
-            using (var scope = container.BeginLifetimeScope())
-            {
-                var sniffer = scope.Resolve<IFileTypeSniffer>();
+            Assert.NotNull(sniffer);
 
-                Assert.NotNull(sniffer);
-
-                var statistics = sniffer.GetMetadataStatistics();
-                var expected = 19 + 3 + 7; //不重复组件 + 重复组件 + 核心组件
-                Assert.Equal(expected, statistics.SimpleCount);
-            }
+            var statistics = sniffer.GetMetadataStatistics();
+            var expected = 19 + 3 + 7; //不重复组件 + 重复组件 + 核心组件
+            Assert.Equal(expected, statistics.SimpleCount);
         }
     }
 }

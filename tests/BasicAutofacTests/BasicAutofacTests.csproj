@@ -3,18 +3,20 @@
   <Import Project="..\..\common.tests.props" />
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
-    <PackageReference Include="xunit" Version="2.4.1" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
-      <PrivateAssets>all</PrivateAssets>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.4.0-preview-20220726-02" />
+    <PackageReference Include="xunit" Version="2.4.2" />
+    <PackageReference Include="xunit.runner.visualstudio">
+      <Version Condition=" '$(TargetFramework)' != 'net452' ">2.4.5</Version>
+      <Version Condition=" '$(TargetFramework)' == 'net452' ">2.4.3</Version>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
     </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\CosmosStack.Extensions.FileTypeSniffer.Library.Zip\CosmosStack.Extensions.FileTypeSniffer.Library.Zip.csproj" />
-    <ProjectReference Include="..\..\src\CosmosStack.Extensions.FileTypeSniffer.Extra.Autofac\CosmosStack.Extensions.FileTypeSniffer.Extra.Autofac.csproj" />
-    <ProjectReference Include="..\..\src\CosmosStack.Extensions.FileTypeSniffer\CosmosStack.Extensions.FileTypeSniffer.csproj" />
+    <ProjectReference Include="..\..\src\Cosmos.FileTypeSniffer.Definitions.Zip\Cosmos.FileTypeSniffer.Definitions.Zip.csproj" />
+    <ProjectReference Include="..\..\src\Cosmos.FileTypeSniffer.DependOn.Autofac\Cosmos.FileTypeSniffer.DependOn.Autofac.csproj" />
+    <ProjectReference Include="..\..\src\Cosmos.FileTypeSniffer\Cosmos.FileTypeSniffer.csproj" />
   </ItemGroup>
 
 </Project>

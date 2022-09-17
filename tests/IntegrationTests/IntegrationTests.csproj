@@ -4,7 +4,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
-    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit" Version="2.4.2" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -12,14 +12,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\CosmosStack.Extensions.FileTypeSniffer.Library.Zip\CosmosStack.Extensions.FileTypeSniffer.Library.Zip.csproj" />
-    <ProjectReference Include="..\..\src\CosmosStack.Extensions.FileTypeSniffer.Library.Development\CosmosStack.Extensions.FileTypeSniffer.Library.Development.csproj" />
-    <ProjectReference Include="..\..\src\CosmosStack.Extensions.FileTypeSniffer.Library.Image\CosmosStack.Extensions.FileTypeSniffer.Library.Image.csproj" />
-    <ProjectReference Include="..\..\src\CosmosStack.Extensions.FileTypeSniffer.Library.Media\CosmosStack.Extensions.FileTypeSniffer.Library.Media.csproj" />
-    <ProjectReference Include="..\..\src\CosmosStack.Extensions.FileTypeSniffer.Library.Office\CosmosStack.Extensions.FileTypeSniffer.Library.Office.csproj" />
-    <ProjectReference Include="..\..\src\CosmosStack.Extensions.FileTypeSniffer.Library.Science\CosmosStack.Extensions.FileTypeSniffer.Library.Science.csproj" />
-    <ProjectReference Include="..\..\src\CosmosStack.Extensions.FileTypeSniffer\CosmosStack.Extensions.FileTypeSniffer.csproj" />
-    <ProjectReference Include="..\..\src\CosmosStack.Extensions.FileTypeSniffer.Extra.DependencyInjection\CosmosStack.Extensions.FileTypeSniffer.Extra.DependencyInjection.csproj" />
+    <ProjectReference Include="..\..\src\Cosmos.FileTypeSniffer\Cosmos.FileTypeSniffer.csproj" />
+    <ProjectReference Include="..\..\src\Cosmos.FileTypeSniffer.Definitions.Zip\Cosmos.FileTypeSniffer.Definitions.Zip.csproj" />
+    <ProjectReference Include="..\..\src\Cosmos.FileTypeSniffer.Definitions.Dev\Cosmos.FileTypeSniffer.Definitions.Dev.csproj" />
+    <ProjectReference Include="..\..\src\Cosmos.FileTypeSniffer.Definitions.Image\Cosmos.FileTypeSniffer.Definitions.Image.csproj" />
+    <ProjectReference Include="..\..\src\Cosmos.FileTypeSniffer.Definitions.Media\Cosmos.FileTypeSniffer.Definitions.Media.csproj" />
+    <ProjectReference Include="..\..\src\Cosmos.FileTypeSniffer.Definitions.Office\Cosmos.FileTypeSniffer.Definitions.Office.csproj" />
+    <ProjectReference Include="..\..\src\Cosmos.FileTypeSniffer.Definitions.Science\Cosmos.FileTypeSniffer.Definitions.Science.csproj" />
+    <ProjectReference Include="..\..\src\Cosmos.FileTypeSniffer.DependOn.DependencyInjection\Cosmos.FileTypeSniffer.DependOn.DependencyInjection.csproj" />
   </ItemGroup>
 
 </Project>
