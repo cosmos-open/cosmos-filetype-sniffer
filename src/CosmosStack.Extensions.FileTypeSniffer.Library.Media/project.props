@@ -1,9 +1,0 @@
-<Project>
-
-  <PropertyGroup>
-    <AssemblyName>CosmosStack.Extensions.FileTypeSniffer.Library.Media</AssemblyName>
-    <PackageId>CosmosStack.Extensions.FileTypeSniffer.Library.Media</PackageId>
-    <Description>Fingerprint library for media class files for Cosmos Business file type sniffer Extensions.</Description>
-  </PropertyGroup>
-
-</Project>

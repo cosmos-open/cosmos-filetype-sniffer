@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <Configurations>Debug;Release</Configurations>
+        <Platforms>AnyCPU</Platforms>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <AssemblyName>Cosmos.Extensions.FileTypeSniffer.Definitions.Image</AssemblyName>
+        <PackageId>CosmosStack.Extensions.FileTypeSniffer.Definitions.Image</PackageId>
+        <Description>Fingerprint library for image class files for Cosmos Business file type sniffer Extensions.</Description>
+    </PropertyGroup>
+
+    <Import Project="..\..\common.props" />
+
+    <Import Project="references.props" />
+
+</Project>

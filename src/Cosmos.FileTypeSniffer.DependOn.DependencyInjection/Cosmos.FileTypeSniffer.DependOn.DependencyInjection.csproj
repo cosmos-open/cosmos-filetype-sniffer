@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <Configurations>Debug;Release</Configurations>
+        <Platforms>AnyCPU</Platforms>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <AssemblyName>Cosmos.Extensions.FileTypeSniffer.DependOn.DependencyInjection</AssemblyName>
+        <PackageId>CosmosStack.Extensions.FileTypeSniffer.DependOn.DependencyInjection</PackageId>
+        <Description>Extra package for Microsoft DependencyInjection extensions and Cosmos FileTypeSniffer business extensions.</Description>
+    </PropertyGroup>
+
+    <Import Project="..\..\common.props" />
+
+    <Import Project="dependency.props" />
+
+    <Import Project="references.props" />
+
+</Project>

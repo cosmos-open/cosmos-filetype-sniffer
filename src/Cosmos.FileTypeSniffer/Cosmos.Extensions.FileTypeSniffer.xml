@@ -1,0 +1,302 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Cosmos.Extensions.FileTypeSniffer</name>
+    </assembly>
+    <members>
+        <member name="T:Cosmos.Dependency.DependencyExtensions">
+            <summary>
+            Dependency Extensions <br />
+            依赖扩展
+            </summary>
+        </member>
+        <member name="M:Cosmos.Dependency.DependencyExtensions.AddFileTypeSniffer``1(``0,System.Action{Cosmos.Sniffers.FileTypeSniffers.FileTypeSnifferOptions})">
+            <summary>
+            Add FileType Sniffer Support
+            </summary>
+            <param name="register"></param>
+            <param name="configure"></param>
+            <typeparam name="TRegister"></typeparam>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="T:Cosmos.Sniffers.FileTypeSniffers.Core.FileTypeSnifferFactory">
+            <summary>
+            FileType Sniffer Factory
+            </summary>
+        </member>
+        <member name="M:Cosmos.Sniffers.FileTypeSniffers.Core.FileTypeSnifferFactory.Create(System.Collections.Generic.List{Cosmos.Sniffers.FileTypeSniffers.Registering.IFileTypeDescriptor},System.Char[])">
+            <summary>
+            Create a new instance of <see cref="T:Cosmos.Sniffers.FileTypeSniffers.FileTypeSniffer"/>. <br />
+            创建一个新的 FileTypeSniffer 实例
+            </summary>
+            <param name="descriptors"></param>
+            <param name="separators"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Cosmos.Sniffers.FileTypeSniffers.Core.ISniffingDescriptorProvider">
+            <summary>
+            Sniffer Descriptor Provider Interface <br />
+            文件类型嗅探器描述符提供者程序接口
+            </summary>
+        </member>
+        <member name="M:Cosmos.Sniffers.FileTypeSniffers.Core.ISniffingDescriptorProvider.GetDescriptors">
+            <summary>
+            Get descriptors <br />
+            获取描述符
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Cosmos.Sniffers.FileTypeSniffers.Core.SniffingMetadata">
+            <summary>
+            Sniffing Metadata <br />
+            嗅探元数据
+            </summary>
+        </member>
+        <member name="P:Cosmos.Sniffers.FileTypeSniffers.Core.SniffingMetadata.ExtensionNames">
+            <summary>
+            Extension name <br />
+            扩展名
+            </summary>
+        </member>
+        <member name="P:Cosmos.Sniffers.FileTypeSniffers.Core.SniffingMetadata.Hex">
+            <summary>
+            Gets as Hex <br />
+            以十六进制的方式获取
+            </summary>
+        </member>
+        <member name="P:Cosmos.Sniffers.FileTypeSniffers.Core.SniffingMetadata.HexBytes">
+            <summary>
+            Gets as Hex bytes <br />
+            以十六进制字节的方式获取
+            </summary>
+        </member>
+        <member name="P:Cosmos.Sniffers.FileTypeSniffers.Core.SniffingMetadata.Offsets">
+            <summary>
+            Gets Offsets <br />
+            获取偏移量
+            </summary>
+        </member>
+        <member name="P:Cosmos.Sniffers.FileTypeSniffers.Core.SniffingMetadata.IsComplexMetadata">
+            <summary>
+            Is complex metadata <br />
+            标记是否为复杂元数据
+            </summary>
+        </member>
+        <member name="M:Cosmos.Sniffers.FileTypeSniffers.Core.SniffingMetadata.IsMatched(System.Byte[])">
+            <summary>
+            Is matched <br />
+            是否命中
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Cosmos.Sniffers.FileTypeSniffers.Core.SniffingNode">
+            <summary>
+            Sniffing Node <br />
+            嗅探节点
+            </summary>
+        </member>
+        <member name="T:Cosmos.Sniffers.FileTypeSniffers.Core.SniffingOffset">
+            <summary>
+            Sniffing Offset <br />
+            嗅探偏移量
+            </summary>
+        </member>
+        <member name="T:Cosmos.Sniffers.FileTypeSniffers.FileTypeSniffer">
+            <summary>
+            FileType Sniffer <br />
+            文件类型嗅探器
+            </summary>
+        </member>
+        <member name="M:Cosmos.Sniffers.FileTypeSniffers.FileTypeSniffer.Match(System.Byte[],System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.Sniffers.FileTypeSniffers.FileTypeSniffer.Match(System.String,System.Int32,System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.Sniffers.FileTypeSniffers.FileTypeSniffer.MatchSingle(System.Byte[])">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.Sniffers.FileTypeSniffers.FileTypeSniffer.MatchSingle(System.String,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.Sniffers.FileTypeSniffers.FileTypeSniffer.Expect(System.Collections.Generic.List{System.String})">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.Sniffers.FileTypeSniffers.FileTypeSniffer.Expect(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.Sniffers.FileTypeSniffers.FileTypeSniffer.GetMetadataStatistics">
+            <inheritdoc />
+        </member>
+        <member name="T:Cosmos.Sniffers.FileTypeSniffers.ExpectedFileTypeSniffer">
+            <summary>
+            Expected file type sniffer <br />
+            具有期待结果的文件类型嗅探器
+            </summary>
+        </member>
+        <member name="M:Cosmos.Sniffers.FileTypeSniffers.ExpectedFileTypeSniffer.Match(System.Byte[],System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.Sniffers.FileTypeSniffers.ExpectedFileTypeSniffer.Match(System.String,System.Int32,System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.Sniffers.FileTypeSniffers.ExpectedFileTypeSniffer.MatchSingle(System.Byte[])">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.Sniffers.FileTypeSniffers.ExpectedFileTypeSniffer.MatchSingle(System.String,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.Sniffers.FileTypeSniffers.ExpectedFileTypeSniffer.Expect(System.Collections.Generic.List{System.String})">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.Sniffers.FileTypeSniffers.ExpectedFileTypeSniffer.Expect(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.Sniffers.FileTypeSniffers.ExpectedFileTypeSniffer.GetMetadataStatistics">
+            <inheritdoc />
+        </member>
+        <member name="T:Cosmos.Sniffers.FileTypeSniffers.FileTypeSnifferOptions">
+            <summary>
+            FileType Sniffer Options <br />
+            文件类型嗅探器选项
+            </summary>
+        </member>
+        <member name="P:Cosmos.Sniffers.FileTypeSniffers.FileTypeSnifferOptions.Separators">
+            <summary>
+            Separators <br />
+            分隔符
+            </summary>
+        </member>
+        <member name="M:Cosmos.Sniffers.FileTypeSniffers.FileTypeSnifferOptions.AddProvider``1(``0)">
+            <summary>
+            Add provider <br />
+            添加提供者程序
+            </summary>
+            <param name="provider"></param>
+            <typeparam name="TProvider"></typeparam>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:Cosmos.Sniffers.FileTypeSniffers.FileTypeSnifferOptions.AddProvider``1">
+            <summary>
+            Add provider <br />
+            添加提供者程序
+            </summary>
+            <typeparam name="TProvider"></typeparam>
+        </member>
+        <member name="T:Cosmos.Sniffers.FileTypeSniffers.Providers.DefaultFileTypeProvider">
+            <summary>
+            Default FileType Provider <br />
+            默认的文件类型提供者程序
+            </summary>
+        </member>
+        <member name="M:Cosmos.Sniffers.FileTypeSniffers.Providers.DefaultFileTypeProvider.GetDescriptors">
+            <inheritdoc />
+        </member>
+        <member name="T:Cosmos.Sniffers.FileTypeSniffers.Registering.FileTypeDescriptor">
+            <summary>
+            File Type Descriptor <br />
+            文件类型描述符
+            </summary>
+        </member>
+        <member name="P:Cosmos.Sniffers.FileTypeSniffers.Registering.FileTypeDescriptor.Description">
+            <inheritdoc />
+        </member>
+        <member name="P:Cosmos.Sniffers.FileTypeSniffers.Registering.FileTypeDescriptor.ExtensionNames">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.Sniffers.FileTypeSniffers.Registering.FileTypeDescriptor.ResolveExtensionNames(System.Char[])">
+            <inheritdoc />
+        </member>
+        <member name="P:Cosmos.Sniffers.FileTypeSniffers.Registering.FileTypeDescriptor.Hex">
+            <inheritdoc />
+        </member>
+        <member name="P:Cosmos.Sniffers.FileTypeSniffers.Registering.FileTypeDescriptor.Offset">
+            <inheritdoc />
+        </member>
+        <member name="M:Cosmos.Sniffers.FileTypeSniffers.Registering.FileTypeDescriptor.ResolveHex(System.String,System.Char[])">
+            <inheritdoc />
+        </member>
+        <member name="P:Cosmos.Sniffers.FileTypeSniffers.Registering.FileTypeDescriptor.IsComplexMetadata">
+            <inheritdoc />
+        </member>
+        <member name="T:Cosmos.Sniffers.FileTypeSniffers.Registering.IFileTypeDescriptor">
+            <summary>
+            File Type Descriptor Interface <br />
+            文件类型描述符接口
+            </summary>
+        </member>
+        <member name="T:Cosmos.Sniffers.FileTypeSniffers.Registering.IFileTypeFingerprint">
+            <summary>
+            File Type Fingerprint Interface <br />
+            文件类型指纹接口
+            </summary>
+        </member>
+        <member name="T:Cosmos.Sniffers.IFileTypeSniffer">
+            <summary>
+            FileType Sniffer Interface <br />
+            文件类型嗅探器接口
+            </summary>
+        </member>
+        <member name="M:Cosmos.Sniffers.IFileTypeSniffer.Match(System.Byte[],System.Boolean)">
+            <summary>
+            Match <br />
+            获取匹配的文件扩展名
+            </summary>
+            <param name="data"></param>
+            <param name="matchAll"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.Sniffers.IFileTypeSniffer.Match(System.String,System.Int32,System.Boolean)">
+            <summary>
+            Match <br />
+            获取匹配的文件扩展名
+            </summary>
+            <param name="filePath"></param>
+            <param name="simpleLength"></param>
+            <param name="matchAll"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.Sniffers.IFileTypeSniffer.MatchSingle(System.Byte[])">
+            <summary>
+            Match Single <br />
+            获取单个匹配的文件扩展名
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.Sniffers.IFileTypeSniffer.MatchSingle(System.String,System.Int32)">
+            <summary>
+            Match Single <br />
+            获取单个匹配的文件扩展名
+            </summary>
+            <param name="filePath"></param>
+            <param name="simpleLength"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.Sniffers.IFileTypeSniffer.Expect(System.Collections.Generic.List{System.String})">
+            <summary>
+            Expect <br />
+            期待
+            </summary>
+            <param name="expectedResults"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.Sniffers.IFileTypeSniffer.Expect(System.String)">
+            <summary>
+            Expect <br />
+            期待
+            </summary>
+            <param name="expectedResult"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cosmos.Sniffers.IFileTypeSniffer.GetMetadataStatistics">
+            <summary>
+            Get Metadata Statistics <br />
+            获取元数据统计信息
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

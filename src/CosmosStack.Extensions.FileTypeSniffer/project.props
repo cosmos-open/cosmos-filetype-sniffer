@@ -1,9 +1,0 @@
-<Project>
-
-    <PropertyGroup>
-        <AssemblyName>CosmosStack.Extensions.FileTypeSniffer</AssemblyName>
-        <PackageId>CosmosStack.Extensions.FileTypeSniffer</PackageId>
-        <Description>File extension name sniffer for Cosmos Business Extensions.</Description>
-    </PropertyGroup>
-
-</Project>

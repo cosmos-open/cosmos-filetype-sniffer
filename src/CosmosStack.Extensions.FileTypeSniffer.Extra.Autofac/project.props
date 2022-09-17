@@ -1,9 +1,0 @@
-<Project>
-
-    <PropertyGroup>
-        <AssemblyName>CosmosStack.Extensions.FileTypeSniffer.Extra.Autofac</AssemblyName>
-        <PackageId>CosmosStack.Extensions.FileTypeSniffer.Extra.Autofac</PackageId>
-        <Description>Extra package for Autofac and Cosmos FileTypeSniffer business extensions.</Description>
-    </PropertyGroup>
-
-</Project>

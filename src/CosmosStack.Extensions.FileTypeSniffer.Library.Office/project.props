@@ -1,9 +1,0 @@
-<Project>
-
-  <PropertyGroup>
-    <AssemblyName>CosmosStack.Extensions.FileTypeSniffer.Library.Office</AssemblyName>
-    <PackageId>CosmosStack.Extensions.FileTypeSniffer.Library.Office</PackageId>
-    <Description>Fingerprint library for office class files for Cosmos Business file type sniffer Extensions.</Description>
-  </PropertyGroup>
-
-</Project>
