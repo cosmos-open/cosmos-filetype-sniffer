@@ -11,6 +11,10 @@
         <Description>Fingerprint library for office class files for Cosmos Business file type sniffer Extensions.</Description>
     </PropertyGroup>
 
+    <ItemGroup>
+      <None Remove="Cosmos.Extensions.FileTypeSniffer.Definitions.Office.xml" />
+    </ItemGroup>
+
     <Import Project="..\..\common.props" />
 
     <Import Project="references.props" />

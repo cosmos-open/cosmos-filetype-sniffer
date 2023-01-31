@@ -11,6 +11,10 @@
         <Description>File extension name sniffer for Cosmos Business Extensions.</Description>
     </PropertyGroup>
 
+    <ItemGroup>
+      <None Remove="Cosmos.Extensions.FileTypeSniffer.xml" />
+    </ItemGroup>
+
     <Import Project="..\..\common.props" />
 
     <Import Project="dependency.props" />

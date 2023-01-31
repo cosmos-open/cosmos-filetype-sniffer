@@ -11,6 +11,10 @@
         <Description>Fingerprint library for science class files for Cosmos Business file type sniffer Extensions.</Description>
     </PropertyGroup>
 
+    <ItemGroup>
+      <None Remove="Cosmos.Extensions.FileTypeSniffer.Definitions.Science.xml" />
+    </ItemGroup>
+
     <Import Project="..\..\common.props" />
 
     <Import Project="references.props" />

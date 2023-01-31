@@ -10,7 +10,7 @@
             依赖扩展
             </summary>
         </member>
-        <member name="M:Microsoft.Extensions.DependencyInjection.DependencyExtensions.AddFileTypeSniffer(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Cosmos.Sniffers.FileTypeSniffers.FileTypeSnifferOptions})">
+        <member name="M:Microsoft.Extensions.DependencyInjection.DependencyExtensions.AddCosmosFileTypeSniffer(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Cosmos.Sniffers.FileTypeSniffers.FileTypeSnifferOptions})">
             <summary>
             Add CosmosStack FileType Sniffer Support
             </summary>

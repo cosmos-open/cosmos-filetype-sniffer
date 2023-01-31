@@ -11,6 +11,10 @@
         <Description>Extra package for Microsoft DependencyInjection extensions and Cosmos FileTypeSniffer business extensions.</Description>
     </PropertyGroup>
 
+    <ItemGroup>
+      <None Remove="Cosmos.Extensions.FileTypeSniffer.DependOn.DependencyInjection.xml" />
+    </ItemGroup>
+
     <Import Project="..\..\common.props" />
 
     <Import Project="dependency.props" />

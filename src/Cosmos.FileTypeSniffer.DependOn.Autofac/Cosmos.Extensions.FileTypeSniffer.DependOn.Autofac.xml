@@ -10,7 +10,7 @@
             依赖扩展
             </summary>
         </member>
-        <member name="M:Autofac.DependencyExtensions.RegisterFileTypeSniffer(Autofac.ContainerBuilder,System.Action{Cosmos.Sniffers.FileTypeSniffers.FileTypeSnifferOptions})">
+        <member name="M:Autofac.DependencyExtensions.RegisterCosmosFileTypeSniffer(Autofac.ContainerBuilder,System.Action{Cosmos.Sniffers.FileTypeSniffers.FileTypeSnifferOptions})">
             <summary>
             Add CosmosStack FileType Sniffer Support
             </summary>
