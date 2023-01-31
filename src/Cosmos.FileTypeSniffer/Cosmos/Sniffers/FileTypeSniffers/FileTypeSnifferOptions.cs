@@ -32,8 +32,7 @@ public class FileTypeSnifferOptions
     /// <exception cref="ArgumentNullException"></exception>
     public void AddProvider<TProvider>(TProvider provider) where TProvider : class, ISniffingDescriptorProvider
     {
-        if (provider is null)
-            throw new ArgumentNullException(nameof(provider));
+        provider.Require();
         _providers.Add(provider);
     }
 

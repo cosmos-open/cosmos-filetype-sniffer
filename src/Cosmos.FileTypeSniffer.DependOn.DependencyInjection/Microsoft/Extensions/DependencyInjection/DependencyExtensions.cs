@@ -17,10 +17,8 @@ public static class DependencyExtensions
     /// <returns></returns>
     public static IServiceCollection AddCosmosFileTypeSniffer(this IServiceCollection services, Action<FileTypeSnifferOptions> configure = null)
     {
-        using (var register = new MicrosoftProxyRegister(services))
-        {
-            register.RegisterFileTypeSniffer(configure);
-        }
+        using var register = new MicrosoftProxyRegister(services);
+        register.RegisterFileTypeSniffer(configure);
 
         return services;
     }

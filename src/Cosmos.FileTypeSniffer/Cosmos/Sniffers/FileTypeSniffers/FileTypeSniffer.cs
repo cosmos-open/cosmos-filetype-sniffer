@@ -38,8 +38,7 @@ public class FileTypeSniffer : IFileTypeSniffer
     /// <inheritdoc />
     public List<string> Match(string filePath, int simpleLength, bool matchAll = false)
     {
-        if (string.IsNullOrWhiteSpace(filePath))
-            throw new ArgumentNullException(nameof(filePath));
+        filePath.RequireNotBlank();
 
         if (simpleLength <= 0)
             throw new ArgumentOutOfRangeException(nameof(simpleLength), simpleLength, "Simple length must greater than 0");
@@ -50,7 +49,7 @@ public class FileTypeSniffer : IFileTypeSniffer
         var bytes = new byte[simpleLength];
         using (var file = File.OpenRead(filePath))
         {
-            file.Read(bytes, 0, bytes.Length);
+            _ = file.Read(bytes, 0, bytes.Length);
         }
 
         return Match(bytes, matchAll);

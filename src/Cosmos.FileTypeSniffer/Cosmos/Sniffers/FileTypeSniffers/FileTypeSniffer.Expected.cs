@@ -106,8 +106,7 @@ public class ExpectedFileTypeSniffer : IFileTypeSniffer
 
     private static IEnumerable<string> FixedExpectedResults(List<string> originalExpectedResults)
     {
-        if (originalExpectedResults == null)
-            throw new ArgumentNullException(nameof(originalExpectedResults));
+        originalExpectedResults.Require();
 
         foreach (var result in originalExpectedResults)
         {

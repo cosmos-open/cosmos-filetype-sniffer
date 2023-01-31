@@ -23,8 +23,7 @@ public static class DependencyExtensions
     public static TRegister RegisterFileTypeSniffer<TRegister>(this TRegister register, Action<FileTypeSnifferOptions> configure = null)
         where TRegister : DependencyProxyRegister
     {
-        if (register is null)
-            throw new ArgumentNullException(nameof(register));
+        register.Require();
 
         var options = new FileTypeSnifferOptions();
         configure?.Invoke(options);
